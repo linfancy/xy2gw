@@ -80,7 +80,6 @@ var gwFuns = {
             for(itemFlag;itemFlag<num;itemFlag++,i++){//加载三张到data中
                     listItem.eq(i)
                     .attr('data-images',listData.eq(itemFlag).data('images'))
-                    .attr('data-intro',listData.eq(itemFlag).data('intro'))
                     .attr('data-href',listData.eq(itemFlag).data('href'))
                     .attr('data-title',listData.eq(itemFlag).data('title'));
             }
@@ -88,14 +87,11 @@ var gwFuns = {
                 var t = $(this),
                     imgfirst = t.find('img:first'),
                     img = $(this).attr('data-images'),
-                    intro = $(this).attr('data-intro'),
                     href = $(this).attr('data-href'),
                     title = $(this).attr('data-title');
                 t.find('.imgWrap').append('<img src="'+img+'" alt="'+title+'" width="230" height="250" class="flipInX"/>');
                 t.find('.introBg').find('p').text(title);
-                t.find('a').attr('href',href);
-                t.find('.introDetail').find('h3').text(title);
-                t.find('.introDetail').find('p').text(intro).append('[<a href="'+href+'?from=banner'+i+'" target="_blank">查看详情</a>]');
+                t.find('a').attr('href',href+'?from=banner'+i);
                 setTimeout(function(){//删除前一张图片
                     imgfirst.remove();
                 },2000)
