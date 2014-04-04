@@ -10,11 +10,11 @@ fabu.html为配套在发布系统的版本，可以作为学习模板。
 ---------
 1.接到设计稿并开始相关规划 - 2014.3.15
 
-<img src="http://res.nie.netease.com/xy2/gw/14v1/img/1.jpg" alt="初期规划"/>
+![初期规划](http://res.nie.netease.com/xy2/gw/14v1/img/1.jpg "初期规划")
 
-<img src="http://res.nie.netease.com/xy2/gw/14v1/img/2.jpg" alt="初期规划"/>
+![初期规划](http://res.nie.netease.com/xy2/gw/14v1/img/2.jpg "初期规划")
 
-<img src="http://res.nie.netease.com/xy2/gw/14v1/img/3.jpg" alt="初期规划"/>
+![初期规划](http://res.nie.netease.com/xy2/gw/14v1/img/3.jpg "初期规划")
 
 2.开始制作 - 2014.3.20
 
@@ -28,5 +28,7 @@ fabu.html为配套在发布系统的版本，可以作为学习模板。
 >（3）建立一个方便编辑查看官网注意事项的笔记：<a href="http://note.youdao.com/share/?id=9cb34a908135877f5435d25d60db0d28&type=note" target="_blank">有道云笔记link</a>
 
 >（4）设计师根据初稿修改意见为：<a href="http://note.youdao.com/share/?id=fb3f327278345a4957a299879b7ef6b8&type=note" target="_blank">有道云笔记link</a>
+
+>（5）编辑修改意见为：<a href="http://note.youdao.com/share/?id=490c7cc2c38c39120965692b869cc0d7&type=note " target="_blank">有道云笔记link</a>
 
 
