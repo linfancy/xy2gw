@@ -10,11 +10,11 @@ fabu.html为配套在发布系统的版本，可以作为学习模板。
 ---------
 1.接到设计稿并开始相关规划 - 2014.3.15
 
-![结构规划](http://res.nie.netease.com/xy2/gw/14v1/img/1.jpg)
+<img src="http://res.nie.netease.com/xy2/gw/14v1/img/1.jpg" alt="初期规划"/>
 
-![CSS语法规划和相关注意事项](http://res.nie.netease.com/xy2/gw/14v1/img/3.jpg)
+<img src="http://res.nie.netease.com/xy2/gw/14v1/img/2.jpg" alt="初期规划"/>
 
-![Smart广告位算法规划](http://res.nie.netease.com/xy2/gw/14v1/img/3.jpg)
+<img src="http://res.nie.netease.com/xy2/gw/14v1/img/3.jpg" alt="初期规划"/>
 
 2.开始制作 - 2014.3.20
 
