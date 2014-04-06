@@ -27,7 +27,7 @@ fabu.html为配套在发布系统的版本，可以作为学习模板。
 
 >（3）建立一个方便编辑查看官网注意事项的笔记：<a href="http://note.youdao.com/share/?id=9cb34a908135877f5435d25d60db0d28&type=note" target="_blank">有道云笔记link</a>
 
->（4）设计师根据初稿修改意见为：<a href="http://note.youdao.com/share/?id=fb3f327278345a4957a299879b7ef6b8&type=note" target="_blank">有道云笔记link</a>
+>（4）设计师根据初稿修改意见为：<a href="http://note.youdao.com/share/?id=0f64c12116b1fab9eb8fae6a1c370477&type=note" target="_blank">有道云笔记link</a>
 
 >（5）编辑修改意见为：<a href="http://note.youdao.com/share/?id=490c7cc2c38c39120965692b869cc0d7&type=note " target="_blank">有道云笔记link</a>
 

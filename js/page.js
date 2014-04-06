@@ -8,9 +8,10 @@ $(function(){
         });
     },0);
 
-    var nieFun =['ui.tab',"util.share","nie.util.share","ui.Switch"];//nie组件
+    var nieFun =['ui.tab',"util.share","nie.util.share","ui.Switch","nie.util.freshNews"];//nie组件
     nie.use(nieFun, function () {
-//        $.Switch({btnDoms:[$("#switch-btn button")],imgDoms:[$("#switch-img a")],conDoms:[$("#switch-con span")]});
+        var freshNews=nie.util.freshNews();
+        console.log(freshNews.data)
         $.Switch( {btnDoms:[$('.picSwitchBtn')],imgDoms:[$(".picList")],conDoms:[$('.tukuM li span')]});
 
         $.share.appendTo("#share");
