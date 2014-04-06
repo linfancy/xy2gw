@@ -35,62 +35,63 @@ fabu.html为配套在发布系统的版本，可以作为学习模板。
 
 一期修改后地址为：<a href="http://xy2.163.com/2014/gw/indexv2.html" target="_blank">http://xy2.163.com/2014/gw/indexv2.html</a>
 
-6.开始配置基本的新闻发布系统 - 2014.4.6 20:18
-<blockquote>相关配置标签
+6.开始配置基本的新闻发布系统 - 2014.4.6 20:18  
+  
+<blockquote>相关配置标签  
 
- LunboBanner 版头轮播Banner
+ LunboBanner 版头轮播Banner  
 
- LunboTitle 版头轮播标题
+ LunboTitle 版头轮播标题  
 
- SmartBanner 广告Banner
+ SmartBanner 广告Banner  
 
- News1 最新
+ News1 最新  
 
- News2 新闻
+ News2 新闻  
 
- News3 维护
+ News3 维护  
+ 
+ News4 公告  
 
- News4 公告
+ News5 专题  
 
- News5 专题
+ News6 推荐  
 
- News6 推荐
+ News7 回顾  
 
- News7 回顾
+ News8 玩家  
 
- News8 玩家
+ News9 热帖  
 
- News9 热帖
+ HotShow 热门推荐  
 
- HotShow 热门推荐
+ Editor 小编推荐  
 
- Editor 小编推荐
+ Pic1 大话最牛  
 
- Pic1 大话最牛
+ Pic2 热门牛图  
 
- Pic2 热门牛图
+ Pic3 大话画廊  
 
- Pic3 大话画廊
+ Pic4 真人秀  
 
- Pic4 真人秀
+ Pic5 游戏壁纸  
 
- Pic5 游戏壁纸
+ Pic6 精美周边  
 
- Pic6 精美周边
+ Product 产品推荐  
 
- Product 产品推荐
+ Guide 最新攻略  
 
- Guide 最新攻略
+ VideoZone 录像专区  
 
- VideoZone 录像专区
+ Fight 天下比武大会  
 
- Fight 天下比武大会
+ Entry 常用攻略  
 
- Entry 常用攻略
+ MovieZone 视频专区  
 
- MovieZone 视频专区
-
- Xixing 西行谷
+ Xixing 西行谷  
 
 </blockquote>
 
