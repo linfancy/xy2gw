@@ -37,7 +37,10 @@ fabu.html为配套在发布系统的版本，可以作为学习模板。
 
 6.开始配置基本的新闻发布系统 - 2014.4.6 20:18
 <blockquote>相关配置标签
+
+
  ```html
+
  LunboBanner 版头轮播Banner
  LunboTitle 版头轮播标题
  SmartBanner 广告Banner
@@ -65,6 +68,7 @@ fabu.html为配套在发布系统的版本，可以作为学习模板。
  Entry 常用攻略
  MovieZone 视频专区
  Xixing 西行谷
+
  ```
 
 </blockquote>
