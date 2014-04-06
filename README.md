@@ -33,4 +33,6 @@ fabu.html为配套在发布系统的版本，可以作为学习模板。
 
 5.开始一期修改 - 2014.4.4 10:00am - 17:40pm
 
+一期修改后地址为：<a href="http://xy2.163.com/2014/gw/indexv2.html" target="_blank">http://xy2.163.com/2014/gw/indexv2.html</a>
+
 
