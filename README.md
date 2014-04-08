@@ -35,7 +35,7 @@ fabu.html为配套在发布系统的版本，可以作为学习模板。
 
 一期修改后地址为：<a href="http://xy2.163.com/2014/gw/indexv2.html" target="_blank">http://xy2.163.com/2014/gw/indexv2.html</a>
 
-6.开始配置基本的新闻发布系统 - 2014.4.6 20:18  
+6.开始配置新闻发布系统的嵌套页面 - 2014.4.6 20:18
   
 <blockquote>相关配置标签  
 
