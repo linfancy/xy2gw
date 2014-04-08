@@ -19,7 +19,7 @@
 样式Reset
 =====================================*/
 html{color:#000}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}article,aside,audio,bdi,canvas,datalist,details,figcaption,figure,footer,header,keygen,mark,meter,nav,output,progress,rp,rt,ruby,section,source,summary,time,track,video,title{display:block}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}li{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}html,body{height:100%;background-color:#fff;margin:0;padding:0}body{font-family:"Microsoft YaHei",simSun,"Lucida Grande","Lucida Sans Unicode",Arial;line-height:170%;font-size:12px;color:#000}i{font-style:normal}a{color:#000;text-decoration:none}a:hover{text-decoration:underline}a.under:link,a.under:active,a.under:visited,a.under:hover{text-decoration:underline}.fltL{float:left}.fltR{float:right}.fixR{position:absolute;top:0;right:0}.setCenter{margin:0 auto}.clrB{clear:both}.clrL{clear:left}.clrR{clear:right}.clrN{clear:none}.g-clr{*zoom:1}.g-clr:after{display:block;clear:both;height:0;content:"\0020"}.b{font-weight:bold}.n{font-weight:normal}.txtC{text-align:center}.g-thide{text-indent:-9999px}.hide{display:none !important}
-.topNavItem,.numShow,.picList li img,.tukuM a{transition:all .5s ease-in-out;-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out}
+.topNavItem,.numShow,.picList li img,.tukuM a,.imgWrap{transition:all .5s ease-in-out;-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out}
 @font-face {font-family: 'iconfont';
     src: url('font/iconfont.eot'); /* IE9*/
     src: url('font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -140,8 +140,9 @@ footSell 卖点
 #searchResult{display: block;width: 94px;height:38px;line-height:38px;text-indent:1em;color:#838383;font-size:14px;border-bottom:0;border-right:0;border-top:0;border-left:1px solid #e4e4e4;position: absolute;right: 1px;top: 0;cursor: pointer;background-color: #f1f1f1;background-image: -webkit-gradient(linear,0% 0%, 0% 100%, from(#FBFBFB), to(#F1F1F1));background-image: -moz-linear-gradient(0% 0% 90deg, #FBFBFB,#F1F1F1)}
 /*广告切换*/
 .secSwitch{width: 100%;height: 250px;position: relative;*zoom:1;margin-top: 14px}
-.secSwitch li{position: absolute;width: 230px;}
+.secSwitch li{position: absolute;width: 230px;overflow: hidden}
 .secSwitch li img{display:block;height:250px;position: absolute;top: 0;left: 0}
+.secSwitch li a:hover .imgWrap{-webkit-transform:scale(1.1,1.1);-ms-transform:scale(1.1,1.1);}
 .secSwitch .flipInX{-webkit-animation:flipInX 1s .5s ease both;-moz-animation:flipInX 1s .5s ease both;}
 .smart1 .imgWrap{height: 250px;}
 .smartS ,.smartS .imgWrap{height: 125px;right: 0}
@@ -324,7 +325,7 @@ footSell 卖点
 #slideShow ul{width: 9999px;position: absolute;top:0;left:0}
 #slideShow li{float: left;}
 #slideShow ul li{width: 210px;}
-#slideShow ul li img{display: block;width: 210px;height: 94px}
+#slideShow ul li img{display: block;width: 210px;height: 95px}
 #slideShow ul li a{display: block;background-color: #f1f1f1;color: #838383;height: 30px;line-height: 30px;text-align: center;background-position: -339px -753px;}
 
 .secGuide,.secRaiders{margin-top: -18px}
@@ -362,6 +363,7 @@ footSell 卖点
 .secVideo2 .fListVideo .vIntro blockquote{color: #616161;line-height: 24px;width: 172px;position: absolute;top: 50px;left: 22px;font-family: simSun}
 
 .secXixing{margin-top: 37px;}
+.secXixing .titleName{background-position: -2px -284px}
 .secXixing .ftxtList{margin-top: 0}
 .secXixing .ftxtList .sIntro{width: 177px}
 .secXixing .fListWrap{margin-top: 11px}
