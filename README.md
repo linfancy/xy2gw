@@ -39,55 +39,81 @@ fabu.html为配套在发布系统的版本，可以作为学习模板。
   
 <blockquote>相关配置标签  
 
+
  LunboBanner 版头轮播Banner
+
 
  LunboTitle 版头轮播标题
 
+
  SmartBanner 广告
+
 
  News1 最新
 
+
  News2 新闻
+
 
  News3 维护
 
+
  News4 公告
+
 
  News5 专题
 
+
  News6 推荐
+
 
  News7 回顾
 
+
  News8 玩家
+
 
  News9 热帖
 
+
  HotShow 热门推荐
+
 
  Editor 小编推荐
 
+
  Pic1 大话最牛
+
 
  Pic2 热门牛图
 
+
  Pic3 大话画廊
+
 
  Pic4 真人秀
 
+
  Pic5 游戏壁纸
+
 
  Pic6 精美周边
 
+
  Product 产品推荐
+
 
  GuideNew 最新攻略
 
+
  VideoZone 录像专区
+
 
  Fight 天下比武大会
 
+
  GuideCommon 常用攻略
+
 
  MovieZone 视频专区
 
@@ -95,6 +121,6 @@ fabu.html为配套在发布系统的版本，可以作为学习模板。
 
 7.配置发布系统相关栏目 - 2014.4.8  16:15pm
 
-索引页面模板为：14v1官网
+>索引页面模板为：14v1官网
 
 ![发布系统栏目配置](http://117.18.10.164/fabu.jpg "发布系统栏目配置")   
