@@ -45,7 +45,7 @@ fabu.html为配套在发布系统的版本，可以作为学习模板。
 
  SmartBanner 广告
 
- BannerNews1 最新
+ News1 最新
 
  News2 新闻
 
