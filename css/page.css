@@ -149,7 +149,7 @@ footSell Âôµã
 .smart2{top: 0}
 .smart3{bottom: 0}
 .imgWrap{width: 230px;overflow: hidden;position: relative}
-.bgBlack{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#99000000', endColorstr='#99000000');background:rgba(0,0,0,0.6);}
+.bgBlack{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#66000000', endColorstr='#66000000');background:rgba(0,0,0,0.4);}
 .introBg{width:198px;height: 40px;line-height: 40px;padding: 0 16px;position: absolute;bottom: 0;left: 0;z-index: 8}
 .introBg p{width:198px;overflow:hidden;color: #d4d4d4;font-size: 16px;text-align: center}
 .numShow{width:0; height:0;border-top:#000 15px solid;border-left:#000 15px solid;border-right:15px dashed transparent;border-bottom:15px dashed transparent;z-index: 10;position: absolute;top: 0;left: 0;_border-color: tomato;_filter: chroma(color=tomato);}
@@ -190,7 +190,7 @@ footSell Âôµã
 .block1 .dMid .ftxtList{padding: 15px 20px 0 10px}
 .block1 .dMid .fTabCont{background: #fff;height: 252px}
 .dMid .sTitle{width: 328px}
-.dRight .sTitle{width: 300px}
+.dRight .sTitle{width: 280px}
 .ftxtList .sTitle a{color: #403f3f}
 .ftxtList .sTitle .red,.ftxtList blockquote a{color:#c93231;}
 .ListMore{display: block;width: 20px;height: 20px;background: #fff;border: 1px solid #c7c7c6;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;position: absolute;right: 0;text-align: center;color: #c93231;font-size: 18px;font-weight: bold}
@@ -200,7 +200,7 @@ footSell Âôµã
 .ftxtList .sTop{padding: 15px 28px;background:url(../img/sTop.jpg) #fff repeat-x bottom;height: 89px;text-align: left;margin-bottom: 16px}
 .ftxtList .sTop img{display: block;width: 150px}
 .ftxtList .sIntro{width: 180px;overflow: hidden;height: 85px;}
-.ftxtList .sIntro p a{display:block;color: #c93231;font-size: 16px;font-weight: bold;margin-bottom: 18px;line-height:16px}
+.ftxtList .sIntro p a{display:block;width: 238px;height: 16px;overflow: hidden;color: #c93231;font-size: 16px;font-weight: bold;margin-bottom: 18px;line-height:16px}
 .ftxtList blockquote{font-size: 12px;line-height: 24px}
 
 .secHot{height: 50px;padding: 0 20px;width: 360px;line-height: 50px;background: #e4e4e4;margin: 9px 0 15px;position: relative;*zoom:1;overflow: hidden}
@@ -306,7 +306,7 @@ footSell Âôµã
 .block3 .secBanner p em{display:inline-block;width: 16px;height: 16px;line-height:16px;color: #c93231;background: #ffe9e9;margin-right: 4px}
 .secEntry2 {margin-top: 6px;}
 .secEntry2 li{float: left;margin: 0 -1px -1px 0}
-.secEntry2 li a{display: block;width: 132px;height: 48px;background:#fff;color: #232323;font-size: 13px;text-align: center;line-height: 44px;border: 1px solid #e4e4e4}
+.secEntry2 li a{display: block;width: 132px;height: 48px;background:#fff;color: #232323;font-size: 13px;text-align: center;line-height: 51px;border: 1px solid #e4e4e4}
 .secEntry2 li a.red{color: #c93231}
 .secEntry2 li a:hover{text-decoration: none;background-position: -282px -660px;color: #fff}
 
@@ -364,10 +364,7 @@ footSell Âôµã
 
 .secXixing{margin-top: 37px;}
 .secXixing .titleName{background-position: -2px -284px}
-.secXixing .ftxtList{margin-top: 0}
-.secXixing .ftxtList .sIntro{width: 177px}
-.secXixing .fListWrap{margin-top: 11px}
-.secXixing li{height: 30px}
+.secXixing iframe{margin-top: 15px}
 /*µ¯²ãÃÉ°æ*/
 #NIE-overlayer{display:none;position:absolute;width:100%;height:100%;background:#000;filter:alpha(opacity=80);opacity:.8;top:10px;left:0;z-index:99}
 .mod-share{text-align:center;color:#4e4e4e;width:806px;height:37px;line-height:37px;margin:0 auto;

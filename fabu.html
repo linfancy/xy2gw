@@ -257,7 +257,7 @@
                     <li class="sTop g-clr">
                         <img data-src="<!--ImageUrl-->" alt="<!--Title-->" width="150" height="85" class="fltL"/>
                         <div class="sIntro fltR">
-                            <p><a href="#" target="_blank"><!--Title--></a></p>
+                            <p><a href="#" target="_blank" title="<!--Title-->"><!--Title--></a></p>
                             <blockquote><!--Remark--><a href="<!--NewsUrl-->" target="_blank">[查看详情]</a></blockquote>
                         </div>
                     </li>
@@ -279,7 +279,7 @@
                     <li class="sTop g-clr">
                         <img data-src="<!--ImageUrl-->" alt="<!--Title-->" width="150" height="85" class="fltL"/>
                         <div class="sIntro fltR">
-                            <p><a href="#" target="_blank"><!--Title--></a></p>
+                            <p><a href="#" target="_blank" title="<!--Title-->"><!--Title--></a></p>
                             <blockquote><!--Remark--><a href="<!--NewsUrl-->" target="_blank">[查看详情]</a></blockquote>
                         </div>
                     </li>
@@ -301,7 +301,7 @@
                     <li class="sTop g-clr">
                         <img data-src="<!--ImageUrl-->" alt="<!--Title-->" width="150" height="85" class="fltL"/>
                         <div class="sIntro fltR">
-                            <p><a href="#" target="_blank"><!--Title--></a></p>
+                            <p><a href="#" target="_blank" title="<!--Title-->"><!--Title--></a></p>
                             <blockquote><!--Remark--><a href="<!--NewsUrl-->" target="_blank">[查看详情]</a></blockquote>
                         </div>
                     </li>
@@ -323,7 +323,7 @@
                     <li class="sTop g-clr">
                         <img data-src="<!--ImageUrl-->" alt="<!--Title-->" width="150" height="85" class="fltL"/>
                         <div class="sIntro fltR">
-                            <p><a href="#" target="_blank"><!--Title--></a></p>
+                            <p><a href="#" target="_blank" title="<!--Title-->"><!--Title--></a></p>
                             <blockquote><!--Remark--><a href="<!--NewsUrl-->" target="_blank">[查看详情]</a></blockquote>
                         </div>
                     </li>
@@ -430,15 +430,17 @@
             <div class="picWrap">
                 <!--#CGIEXT# HeadlineEditorBegin:-->
                 <div class="txtImg">
-                    <img data-src="<!--ImageUrl-->" alt="<!--Title-->" width="240" height="115"/>
-                    <div class="bgBlack"><p><!--Title--></p></div>
+                    <a href="<!--NewsUrl-->" target="_blank" title="<!--Title-->">
+                        <img data-src="<!--ImageUrl-->" alt="<!--Title-->" width="240" height="115"/>
+                        <div class="bgBlack"><p><!--Title--></p></div>
+                    </a>
                 </div>
                 <!--#CGIEXT# HeadlineEditorEnd:-->
                 <ul class="fListWrap">
                     <!--#CGIEXT# OutEditorBegin:-->
 
                     <!--#CGIEXT# InEditorBegin:-->
-                    <li><span class="sTitle"><a href="<!--NewsUrl-->" target="_blank"><!--Title--></a></span></li>
+                    <li><span class="sTitle"><a href="<!--NewsUrl-->" target="_blank" title="<!--Title-->"><!--Title--></a></span></li>
                     <!--#CGIEXT# InEditorEnd:-->
 
                     <!--#CGIEXT# OutEditorEnd:-->
@@ -454,25 +456,16 @@
             <div class="picTitle g-clr fltL">
                 <div class="tukuM fltL g-clr" id="tukuM">
                     <ul class="g-clr">
-                        <li><span class="sprite"><em class="sprite"></em></span><a href="#" class="picSwitchBtn picBtn1 current" target="_blank" data-move="-22">大话最牛</a></li>
-                        <li><span class="sprite"><em class="sprite"></em></span><a href="#" class="picSwitchBtn picBtn2" target="_blank" data-move="76">热门牛图</a></li>
-                        <li><span class="sprite"><em class="sprite"></em></span><a href="#" class="picSwitchBtn picBtn3" target="_blank" data-move="186">大话画廊</a></li>
-                        <li><span class="sprite"><em class="sprite"></em></span><a href="#" class="picSwitchBtn picBtn4" target="_blank" data-move="295">真人秀</a></li>
-                        <li><span class="sprite"><em class="sprite"></em></span><a href="#" class="picSwitchBtn picBtn5" target="_blank" data-move="400">游戏壁纸</a></li>
+                        <li><span class="sprite"><em class="sprite"></em></span><a href="#" class="picSwitchBtn picBtn2 current" target="_blank">热门牛图</a></li>
+                        <li><span class="sprite"><em class="sprite"></em></span><a href="#" class="picSwitchBtn picBtn3" target="_blank">大话画廊</a></li>
+                        <li><span class="sprite"><em class="sprite"></em></span><a href="#" class="picSwitchBtn picBtn4" target="_blank">真人秀</a></li>
+                        <li><span class="sprite"><em class="sprite"></em></span><a href="#" class="picSwitchBtn picBtn1" target="_blank">大话最牛</a></li>
+                        <li><span class="sprite"><em class="sprite"></em></span><a href="#" class="picSwitchBtn picBtn5" target="_blank">游戏壁纸</a></li>
                     </ul>
                 </div>
                 <a href="http://tuku.xy2.163.com" class="picBtn6 fltR" target="_blank">进入图库</a>
             </div>
             <div class="picTabCont clrL">
-                <ul class="picList g-clr">
-                    <!--#CGIEXT# OutPic1Begin:-->
-
-                    <!--#CGIEXT# InPic1Begin:-->
-                    <li><a href="<!--NewsUrl-->" target="_blank"><img width="176" height="115" data-src="<!--ImageUrl-->" alt="<!--Title-->"/><div class="bgBlack"><p><!--Title--></p></div></a></li>
-                    <!--#CGIEXT# InPic1End:-->
-
-                    <!--#CGIEXT# OutPic1End:-->
-                </ul>
 
                 <ul class="picList g-clr ">
                     <!--#CGIEXT# OutPic2Begin:-->
@@ -503,7 +496,15 @@
 
                     <!--#CGIEXT# OutPic4End:-->
                 </ul>
+                <ul class="picList g-clr">
+                    <!--#CGIEXT# OutPic1Begin:-->
 
+                    <!--#CGIEXT# InPic1Begin:-->
+                    <li><a href="<!--NewsUrl-->" target="_blank"><img width="176" height="115" data-src="<!--ImageUrl-->" alt="<!--Title-->"/><div class="bgBlack"><p><!--Title--></p></div></a></li>
+                    <!--#CGIEXT# InPic1End:-->
+
+                    <!--#CGIEXT# OutPic1End:-->
+                </ul>
                 <ul class="picList g-clr ">
                     <!--#CGIEXT# OutPic5Begin:-->
 
@@ -605,7 +606,7 @@
                     <li class="sTop g-clr">
                         <img data-src="<!--ImageUrl-->" alt="<!--Title-->" width="150" height="85" class="fltL"/>
                         <div class="sIntro fltL">
-                            <p><a href="#" target="_blank"><!--Title--></a></p>
+                            <p><a href="#" target="_blank" title="<!--Title-->"><!--Title--></a></p>
                             <blockquote><!--Remark--><a href="<!--NewsUrl-->" target="_blank">[查看详情]</a></blockquote>
                         </div>
                     </li>
@@ -688,7 +689,7 @@
         <!--西行谷-->
         <section class="secVideo secXixing">
             <h3 class="tukuTitle secTitle g-clr"><em class="sprite"></em><span class="titleName sprite g-thide">西行谷</span></h3>
-            <iframe src="" frameborder="0"  allowtransparency="true" scrolling="no"></iframe>
+            <iframe src="http://game.163.com/special/iframe/dh2_qt2014.html" frameborder="0"  allowtransparency="true" scrolling="no"  width="400" height="275"></iframe>
         </section>
 
     </div>
