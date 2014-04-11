@@ -11,7 +11,7 @@ $(function(){
     var nieFun =['ui.tab',"util.share","nie.util.share","ui.Switch","nie.util.freshNews"];//nie×é¼þ
     nie.use(nieFun, function () {
         var freshNews=nie.util.freshNews();
-        console.log(freshNews.data)
+        console.log(freshNews.data.length)
         $.Switch( {btnDoms:[$('.picSwitchBtn')],imgDoms:[$(".picList")],conDoms:[$('.tukuM li span')]});
 
         $.share.appendTo("#share");
