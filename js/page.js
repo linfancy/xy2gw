@@ -164,10 +164,15 @@ var gwFuns = {
     },
     entryDetail:function(){ //快速入口弹出
         $('.slideTopDetail').hover(function(){
-            var num = $(this).index()-1;
+            var num = $(this).index();
             $('.entryItem').addClass('hide').eq(num).removeClass('hide');
             $('.entryWrap').addClass('entryWrapShow');
-
+            $('.slideTopDetail').removeClass('current');
+            $(this).delay(100).addClass('current')
+        })
+        $('#closeWrap').click(function(){
+            $('.slideTopDetail').removeClass('current');
+            $('.entryWrap').removeClass('entryWrapShow');
         })
     },
     openD: function(opt){ //弹层函数，按需加载对应即可

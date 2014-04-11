@@ -217,7 +217,8 @@ footSell 卖点
 
 .secEntry{height: 191px;width: 401px;position: relative;*zoom:1;overflow: hidden}
 .entryInner{margin-right: -5px;}
-.secEntry .entryBtn{display: block;width: 79px;height: 94px;border: 1px solid #e4e4e4;background:#fff;float: left;text-align: center;margin:0 -1px -1px 0;position: static;z-index: 12}
+.secEntry .entryBtn{display: block;width: 79px;height: 94px;border: 1px solid #e4e4e4;background:#fff;float: left;text-align: center;margin:0 -1px -1px 0;position: relative;z-index: 10}
+.secEntry .current{border-bottom: 0;height:96px}
 .secEntry .entryBtn:hover{text-decoration: none}
 .secEntry .entryBtn:hover i{-webkit-animation: toTopFromBottom .3s forwards;-moz-animation: toTopFromBottom .3s forwards;}
 .secEntry .entryBtn i{display: block;font-size:30px;margin:27px 0 6px 0;color: #bbb}
@@ -236,11 +237,24 @@ footSell 卖点
     50%{opacity:.3;-moz-transform:translateY(80%)}
     51%{opacity:1}
 }
-.secEntry .entryWrap{position: absolute;left:1px;top:191px;height: 45px;padding: 25px 0;width: 399px;background: #fff;outline: 0;-webkit-transition-property: top;-moz-transition-property: top;-o-transition-property: top;transition-property: top;-webkit-transition-duration: .3s;-moz-transition-duration: .3s;-o-transition-duration: .3s;transition-duration: .3s;z-index: 11}
-.secEntry .entryWrapShow{top: 95px}
+.secEntry .entryWrap{position: absolute;left:1px;top:191px;height: 59px;padding: 18px 0;width: 399px;background: #fff;outline: 0;-webkit-transition-property: top;-moz-transition-property: top;-o-transition-property: top;transition-property: top;-webkit-transition-duration: .3s;-moz-transition-duration: .3s;-o-transition-duration: .3s;transition-duration: .3s;z-index: 20}
+.secEntry #closeWrap{display: block;width: 12px;height: 12px;position: absolute;right: 6px;top: 6px;background-position: -402px -11px}
+.secEntry .entryWrapShow{top: 96px}
 .secEntry .entryItem{padding: 0 26px}
 .secEntry .entryItem a{display: inline-block;padding: 0 2px;height: 18px;line-height: 18px;margin: 0 15px 15px 0}
 .secEntry .entryItem a:hover{background: #c93231;color: #fff;text-decoration: none}
+
+/*日历*/
+#slideWrap2{width: 210px;height: 127px;position: relative;overflow:hidden;}
+#slideBtn2{position: absolute;top: 0;right: 14px;width: 48px;height: 22px;}
+#slideBtn2 a{position: absolute;width: 22px;height: 22px;z-index: 99;top:0px;cursor: pointer}
+#prev2{background-position:-357px -55px;left:0px}
+#next2{background-position:-390px -55px;right:0px}
+#slideWrap2 ul{width: 9999px;position: absolute;top:0;left:0}
+#slideWrap2 li{float: left;}
+#slideWrap2 ul li{width: 210px;}
+#slideWrap2 ul li a{display: block;background-color: #f1f1f1;color: #838383;height: 30px;line-height: 30px;text-align: center;background-position: -339px -753px;}
+
 /*=====================================
 中部
 =====================================*/
