@@ -1,3 +1,20 @@
+//=======================
+// 2014.3-4 建立 by 方阳
+//---------------------------------------
+//---相关函数介绍
+//- gwFuns 大模块
+//---lunboInit                        版头轮播初始化函数（调用 initLunbo 函数）
+//---search                            搜索转码函数
+//---switchSmart                   一屏图片广告位轮播函数
+//---scrollPics                        图片幻灯片组件
+//---entryDetail                     快速入口样式组件
+//---openD                           弹层函数（已包含普通、flash和视频调用方法，具体可看具体参数介绍）
+//---fightTeam                      冠军队伍相关介绍（冠军队伍相关数据可找平台组云云：gzchenyunyun2013@corp.netease.com）
+//---calTime                          日历显示日期函数
+
+
+
+
 $(function(){
     gwFuns.initFun();//模块加载
 
@@ -8,16 +25,22 @@ $(function(){
         });
     },0);
 
-    var nieFun =['ui.tab',"util.share","nie.util.share","ui.Switch","nie.util.freshNews"];//nie组件
+    var nieFun =['ui.tab',"util.share","nie.util.share","ui.Switch","nie.util.freshNews","util.bjTime"];//nie组件
     nie.use(nieFun, function () {
+        //未读新闻
         var freshNews=nie.util.freshNews();
         console.log(freshNews.data.length)
+        //图库
         $.Switch( {btnDoms:[$('.picSwitchBtn')],imgDoms:[$(".picList")],conDoms:[$('.tukuM li span')]});
-
+        //分享
         $.share.appendTo("#share");
+        //新闻切换
         $.tab("#fTabNav1 li", "#fTabCont1 .ftxtList");
         $.tab("#fTabNav2 li", "#fTabCont2 .ftxtList");
+        //日期
+        $.bjTime.getDate(gwFuns.calTime);
     });
+    //右侧飘窗
     var w=$(window);
     if($.browser.msie && $.browser.version == '6.0') {
         $(window).scroll(function(){
@@ -27,7 +50,8 @@ $(function(){
             elm.stop().animate({"top":scTop+(wH-h - 20)},time||400);
         })
     }
-    document.getElementById('searchResult').onclick=function(){gwFuns.search();}//搜索
+    //搜索
+    document.getElementById('searchResult').onclick=function(){gwFuns.search();}
 })
 //组件库
 var gwFuns = {
@@ -100,9 +124,10 @@ var gwFuns = {
             i = 0;
         }
     },
-    scrollPics:function(opt){//轮播组件
+    scrollPics:function(opt){//图片幻灯片组件
         var settings = {
                 currentTarget: '',
+                wrap:'',
                 autoplay : true,
                 minNum: 1,
                 time: 5000,
@@ -116,8 +141,8 @@ var gwFuns = {
             ul = $wrap.find("ul"),
             li_len = ul.find("li").length,
             li_w = ul.find("li").width(),
-            left = $currentTarget.find("#prev"),
-            right = $currentTarget.find("#next"),
+            left = $currentTarget.find(".prev"),
+            right = $currentTarget.find(".next"),
             tab = $(settings.tab),
             timer = null,
             currentIndex = 0;
@@ -177,7 +202,7 @@ var gwFuns = {
     },
     openD: function(opt){ //弹层函数，按需加载对应即可
         var settings = {
-                id: '',
+                id: '',//弹层的id
                 type : '',//1为普通弹层，2为flash弹层，3为视频弹层
                 width: '',//2和3需要使用
                 height: '',//2和3需要使用
@@ -257,7 +282,7 @@ var gwFuns = {
             default :break;
         }
     },
-    FightTeam:function(){//冠军队伍
+    fightTeam:function(){//冠军队伍
         $.ajax({
             type:"get",
             url:"http://xy2-pk.webapp.163.com/user/get_champ_team",
@@ -270,15 +295,50 @@ var gwFuns = {
             }
         })
     },
+    calTime:function(o){
+        var cnday;
+        var week=["一","二","三","四","五","六","日"];
+        var starday
+        var oneday = 86400000
+        var nowdate = new Date(o.dateObj)
+        var nownum
+        switch(o.day){
+            case 0 :cnday = '日';break;
+            case 1 :cnday = '一';break;
+            case 2 :cnday = '二';break;
+            case 3 :cnday = '三';break;
+            case 4 :cnday = '四';break;
+            case 5 :cnday = '五';break;
+            case 6 :cnday = '六';break;
+        }
+        if(o.day == 0){
+            starday = new Date(nowdate.getTime()-oneday*6)
+            nownum = 6
+        }
+        else{
+            starday = new Date(nowdate.getTime()-oneday*(o.day-1))
+            nownum = o.day-1
+        }
+        $(".calTime").each(function(i){
+            var weekday = new Date(starday.getTime()+oneday*i)
+            var html = "<strong>时间：</strong>"
+            html +=weekday.getMonth()+1+"月"+weekday.getDate()+"日"+"　周"+week[i]
+            $(this).html(html);
+        })
+    },
     initFun:function(){
         gwFuns.lunboInit();//版头轮播
         gwFuns.switchSmart();//广告轮播
         gwFuns.entryDetail();//快速入口
-        gwFuns.FightTeam();//冠军队伍
+        gwFuns.fightTeam();//冠军队伍
         gwFuns.scrollPics({//图片切换
             currentTarget:'#slideShow',
-            wrap: '#slideWrap',
-            tab: ''
+            wrap: '#slideWrap'
+        });
+        gwFuns.scrollPics({//日历切换
+            currentTarget:'#slideShow2',
+            wrap: '#slideWrap2',
+            autoplay : false
         });
 
     }

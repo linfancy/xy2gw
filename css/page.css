@@ -238,22 +238,28 @@ footSell 卖点
     51%{opacity:1}
 }
 .secEntry .entryWrap{position: absolute;left:1px;top:191px;height: 59px;padding: 18px 0;width: 399px;background: #fff;outline: 0;-webkit-transition-property: top;-moz-transition-property: top;-o-transition-property: top;transition-property: top;-webkit-transition-duration: .3s;-moz-transition-duration: .3s;-o-transition-duration: .3s;transition-duration: .3s;z-index: 20}
-.secEntry #closeWrap{display: block;width: 12px;height: 12px;position: absolute;right: 6px;top: 6px;background-position: -402px -11px}
+.secEntry #closeWrap{display: block;width: 17px;height: 17px;position: absolute;right: 6px;top: 6px;background-position: -398px -11px}
+.secEntry #closeWrap:hover{background-position: -380px -11px}
 .secEntry .entryWrapShow{top: 96px}
 .secEntry .entryItem{padding: 0 26px}
-.secEntry .entryItem a{display: inline-block;padding: 0 2px;height: 18px;line-height: 18px;margin: 0 15px 15px 0}
-.secEntry .entryItem a:hover{background: #c93231;color: #fff;text-decoration: none}
+.secEntry .entryItem a.btn{display: inline-block;padding: 0 2px;height: 18px;line-height: 18px;margin: 0 15px 15px 0}
+.secEntry .entryItem a.btn:hover{background: #c93231;color: #fff;text-decoration: none}
 
 /*日历*/
-#slideWrap2{width: 210px;height: 127px;position: relative;overflow:hidden;}
-#slideBtn2{position: absolute;top: 0;right: 14px;width: 48px;height: 22px;}
-#slideBtn2 a{position: absolute;width: 22px;height: 22px;z-index: 99;top:0px;cursor: pointer}
-#prev2{background-position:-357px -55px;left:0px}
-#next2{background-position:-390px -55px;right:0px}
+#slideWrap2{width: 248px;height: 68px;position: relative;overflow:hidden;margin: 0 auto}
+#slideBtn2 a{position: absolute;width: 12px;height: 23px;z-index: 99;top:40px;cursor: pointer;padding: 0}
+#slideBtn2 .prev{background-position:-390px -29px;left:32px}
+#slideBtn2 .prev:hover{background-position: -366px -29px}
+#slideBtn2 .next{background-position:-401px -29px;right:32px}
+#slideBtn2 .next:hover{background-position: -377px -29px}
 #slideWrap2 ul{width: 9999px;position: absolute;top:0;left:0}
 #slideWrap2 li{float: left;}
-#slideWrap2 ul li{width: 210px;}
-#slideWrap2 ul li a{display: block;background-color: #f1f1f1;color: #838383;height: 30px;line-height: 30px;text-align: center;background-position: -339px -753px;}
+#slideWrap2 ul li{width: 260px;}
+#slideWrap2 .calIntro{padding-left: 40px}
+#slideWrap2 .calIntro strong{margin-left: -40px}
+#slideWrap2 .calIntro a{background: none;height: 14px;line-height: 14px;padding: 0;margin: 0 6px 6px 0;color: #c93231}
+#slideWrap2 .calIntro a:hover{text-decoration: underline}
+
 
 /*=====================================
 中部
@@ -343,8 +349,8 @@ footSell 卖点
 #slideWrap{width: 210px;height: 127px;position: relative;overflow:hidden;}
 #slideBtn{position: absolute;top: 0;right: 14px;width: 48px;height: 22px;}
 #slideBtn a{position: absolute;width: 22px;height: 22px;z-index: 99;top:0px;cursor: pointer}
-#slideBtn #prev{background-position:-357px -55px;left:0px}
-#slideBtn #next{background-position:-390px -55px;right:0px}
+#slideBtn .prev{background-position:-357px -55px;left:0px}
+#slideBtn .next{background-position:-390px -55px;right:0px}
 #slideShow ul{width: 9999px;position: absolute;top:0;left:0}
 #slideShow li{float: left;}
 #slideShow ul li{width: 210px;}
