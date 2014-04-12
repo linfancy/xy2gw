@@ -223,10 +223,13 @@ footSell 卖点
 .secEntry .entryBtn:hover i{-webkit-animation: toTopFromBottom .3s forwards;-moz-animation: toTopFromBottom .3s forwards;}
 .secEntry .entryBtn i{display: block;font-size:30px;margin:27px 0 6px 0;color: #bbb}
 .secEntry .entryBtn p{color: #000;font-size: 14px}
-.secEntry .entryArrow{width: 5px;display: block;margin: 3px auto;}
+.secEntry .entryArrow{width: 5px;display: block;margin: 4px auto;}
 .secEntry .entryArrow span,.secEntry .entryArrow em{position: static;display: block;width: 0;top: 0;left: 0;height: 0;border-color: rgba(255,255,255,0);border-color: transparent\0;_border-color: tomato;_filter: chroma(color=tomato);border-style: solid;overflow: hidden;border-width: 5px 5px 0;}
+.secEntry .current .entryArrow span,.secEntry .current .entryArrow em{position: static;display: block;width: 0;top: 0;left: 0;height: 0;border-color: rgba(255,255,255,0);border-color: transparent\0;_border-color: tomato;_filter: chroma(color=tomato);border-style: solid;overflow: hidden;border-width: 0 5px 5px;}
 .secEntry .entryArrow span{border-top-color: #fff;margin-top: -8px}
 .secEntry .entryArrow em{top: 1px;border-top-color: #9c9c9c;}
+.secEntry .current .entryArrow span{border-bottom-color: #fff;margin-top: -2px}
+.secEntry .current .entryArrow em{top: -1px;border-bottom-color: #9c9c9c;}
 @-webkit-keyframes toTopFromBottom{
     49%{-webkit-transform:translateY(-100%)}
     50%{opacity:.3;-webkit-transform:translateY(40%)}
@@ -260,7 +263,11 @@ footSell 卖点
 #slideWrap2 .calIntro a{background: none;height: 14px;line-height: 14px;padding: 0;margin: 0 6px 6px 0;color: #c93231}
 #slideWrap2 .calIntro a:hover{text-decoration: underline}
 
-
+/*新服*/
+.serverName a,.serverTime p,#server strong{display:block;float: left;width: 64px;height: 23px;line-height: 23px;margin-right: 30px;text-align: center}
+#server strong{color: #bbb;height: 23px;width: 55px;margin-right: 8px}
+.serverName{margin-bottom: 10px}
+.serverName a{color: #c93231}
 /*=====================================
 中部
 =====================================*/
@@ -357,8 +364,24 @@ footSell 卖点
 #slideShow ul li img{display: block;width: 210px;height: 95px}
 #slideShow ul li a{display: block;background-color: #f1f1f1;color: #838383;height: 30px;line-height: 30px;text-align: center;background-position: -339px -753px;}
 
+.secGuide{position: relative;zoom: 1}
 .secGuide,.secRaiders{margin-top: -18px}
 .GuideTitle .titleName{background-position: -7px -46px}
+.entryBlock{position: absolute;top: 16px;right: 185px}
+.entryBlock h3{background-color:#fff;height: 28px;line-height: 28px;width:120px;border: 1px solid #c7c7c6;text-align: center;position: relative;cursor: pointer;font-weight: bold;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    z-index: 10;}
+.entryBlock em{position: absolute;display: block;width: 11px;height:11px;background-position: -403px -529px;top: 8px;left: 10px}
+.entryBlock span{position: absolute;display: block;width:0; height:0;border-top:#c93231 5px solid;border-left:5px dashed transparent;border-right:5px dashed transparent;border-bottom:5px dashed transparent;z-index: 10;top: 12px;right: 12px;_border-color: tomato;_filter: chroma(color=tomato);}
+.entryBlockWrap{width: 286px;border: 1px solid #c7c7c6;background: #fff;position: absolute;top: 0;left: 0;z-index: 30;display: none}
+.entryBlockWrap p{height: 28px;line-height: 28px;text-indent: 10px;background: #f6f6f6;border-bottom: 1px solid #c7c7c6;font-weight: bold}
+#entryClose{display: block;width: 17px;height: 17px;background-position: -398px -88px;position: absolute;top: 7px;right: 6px}
+.entryArea{padding: 16px;margin-bottom: -20px}
+.entryArea a{display: block;padding: 0 4px;height: 18px;line-height: 18px;float: left;white-space: nowrap;margin-bottom: 20px;margin-right: 6px}
+.entryArea a:hover{background: #c93231;color: #fff;text-decoration: none}
+
 
 .block3 .dLeft .xy2Intro{margin-bottom: 8px}
 .xy2Intro .logo{width: 210px;height: 75px;background-position: 0 -792px;text-indent: -9999px}

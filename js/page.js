@@ -12,14 +12,10 @@
 //---fightTeam                      冠军队伍相关介绍（冠军队伍相关数据可找平台组云云：gzchenyunyun2013@corp.netease.com）
 //---calTime                          日历显示日期函数
 
-
-
-
 $(function(){
     gwFuns.initFun();//模块加载
 
-    setTimeout(function(){
-        //图片延迟加载
+    setTimeout(function(){//图片延迟加载
         new nie.util.pageLoad({
             imgSelector:"img"
         });
@@ -52,6 +48,13 @@ $(function(){
     }
     //搜索
     document.getElementById('searchResult').onclick=function(){gwFuns.search();}
+    //周末活动
+    $('.entryBlock h3').click(function(){
+        $('.entryBlockWrap').fadeIn();
+    })
+    $('#entryClose').click(function(){
+        $('.entryBlockWrap').fadeOut();
+    })
 })
 //组件库
 var gwFuns = {
