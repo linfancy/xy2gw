@@ -101,7 +101,9 @@ transition: font-size 0.25s ease-out 0s;
     url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
 }
 
-.iconfont{font-family:"iconfont";font-size:16px;font-style:normal;}
+.iconfont{font-family:"iconfont" !important;font-size:16px;font-style:normal;-webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
     </style>
 </head>
 <body>
@@ -110,51 +112,9 @@ transition: font-size 0.25s ease-out 0s;
         <ul class="icon_lists clear">
             
                 <li>
-                    <i class="iconfont">&#x3481;</i>
-                    <div class="name">搜索</div>
-                    <div class="code">&amp;#x3481;</div>
-                </li>
-            
-                <li>
-                    <i class="iconfont">&#xf00b5;</i>
-                    <div class="name">提醒</div>
-                    <div class="code">&amp;#xf00b5;</div>
-                </li>
-            
-                <li>
-                    <i class="iconfont">&#xf0002;</i>
-                    <div class="name">服务</div>
-                    <div class="code">&amp;#xf0002;</div>
-                </li>
-            
-                <li>
-                    <i class="iconfont">&#x3434;</i>
-                    <div class="name">规格</div>
-                    <div class="code">&amp;#x3434;</div>
-                </li>
-            
-                <li>
-                    <i class="iconfont">&#xf0133;</i>
-                    <div class="name">表情</div>
-                    <div class="code">&amp;#xf0133;</div>
-                </li>
-            
-                <li>
-                    <i class="iconfont">&#x346e;</i>
-                    <div class="name">男人头像</div>
-                    <div class="code">&amp;#x346e;</div>
-                </li>
-            
-                <li>
-                    <i class="iconfont">&#x3432;</i>
-                    <div class="name">电影</div>
-                    <div class="code">&amp;#x3432;</div>
-                </li>
-            
-                <li>
-                    <i class="iconfont">&#xf0148;</i>
-                    <div class="name">购物车</div>
-                    <div class="code">&amp;#xf0148;</div>
+                    <i class="iconfont">&#xf00b6;</i>
+                    <div class="name">提示</div>
+                    <div class="code">&amp;#xf00b6;</div>
                 </li>
             
                 <li>
@@ -164,15 +124,63 @@ transition: font-size 0.25s ease-out 0s;
                 </li>
             
                 <li>
+                    <i class="iconfont">&#xf0133;</i>
+                    <div class="name">表情</div>
+                    <div class="code">&amp;#xf0133;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#xf0148;</i>
+                    <div class="name">购物车</div>
+                    <div class="code">&amp;#xf0148;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3432;</i>
+                    <div class="name">搜索1</div>
+                    <div class="code">&amp;#x3432;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3444;</i>
+                    <div class="name">提醒</div>
+                    <div class="code">&amp;#x3444;</div>
+                </li>
+            
+                <li>
                     <i class="iconfont">&#x343a;</i>
                     <div class="name">日历</div>
                     <div class="code">&amp;#x343a;</div>
                 </li>
             
                 <li>
+                    <i class="iconfont">&#x3433;</i>
+                    <div class="name">电影</div>
+                    <div class="code">&amp;#x3433;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x3434;</i>
+                    <div class="name">规格</div>
+                    <div class="code">&amp;#x3434;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#x346e;</i>
+                    <div class="name">男人头像</div>
+                    <div class="code">&amp;#x346e;</div>
+                </li>
+            
+                <li>
                     <i class="iconfont">&#xf0028;</i>
                     <div class="name">推广计划</div>
                     <div class="code">&amp;#xf0028;</div>
+                </li>
+            
+                <li>
+                    <i class="iconfont">&#xf0002;</i>
+                    <div class="name">服务</div>
+                    <div class="code">&amp;#xf0002;</div>
                 </li>
             
         </ul>
@@ -192,7 +200,12 @@ transition: font-size 0.25s ease-out 0s;
 </pre>
 第二步：定义使用iconfont的样式
             <pre>
-.iconfont{font-family:"iconfont";font-size:16px;font-style:normal;}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
 </pre>
 第三步：挑选相应图标并获取字体编码，应用于页面
 <pre>

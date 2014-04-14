@@ -129,7 +129,7 @@
         <form id="search">
             <input type="text" onblur="if(this.value==''){this.value='搜索大话2'};" onfocus="this.value=this.value=='搜索大话2'?'':this.value;" value="搜索大话2" class="inpTxt" name="qs" id="searchKeyWords1">
             <input type="button" value="搜一下"  id="searchResult"/>
-            <i class="iconfont">&#x3481;</i>
+            <i class="iconfont">&#x3432;</i>
         </form>
     </section>
     <!--广告轮播-->
@@ -380,19 +380,20 @@
     <section class="secEntry">
         <div class="entryInner g-clr">
             <a class="entryBtn slideTopDetail" href=""><i class="iconfont">&#x343a;</i><p>日历</p><span class="entryArrow"><em></em><span></span></span></a>
-            <a class="entryBtn slideTopDetail" href=""><i class="iconfont">&#xf00b5;</i><p>新服</p><span class="entryArrow"><em></em><span></span></span></a>
+            <a class="entryBtn slideTopDetail" href=""><i class="iconfont">&#x3444;</i><p>新服</p><span class="entryArrow"><em></em><span></span></span></a>
             <a class="entryBtn slideTopDetail" href=""><i class="iconfont">&#xf0002;</i><p>客服</p><span class="entryArrow"><em></em><span></span></span></a>
             <a class="entryBtn slideTopDetail" href=""><i class="iconfont">&#x3434;</i><p>工具</p> <span class="entryArrow"><em></em><span></span></span></a>
             <a class="entryBtn slideTopDetail" href=""><i class="iconfont">&#xf0028;</i><p>排行榜</p><span class="entryArrow"><em></em><span></span></span></a>
 
             <a class="entryBtn" href=""><i class="iconfont">&#xf0133;</i><p>表情</p></a>
             <a class="entryBtn" href=""><i class="iconfont">&#x346e;</i><p>头像</p></a>
-            <a class="entryBtn" href=""><i class="iconfont">&#x3432;</i><p>录像</p></a>
+            <a class="entryBtn" href=""><i class="iconfont">&#x3433;</i><p>录像</p></a>
             <a class="entryBtn" href=""><i class="iconfont">&#xf0148;</i><p>周边</p></a>
-            <a class="entryBtn" href=""><i class="iconfont">&#xf00f4;</i><p>推广员</p></a>
+            <a class="entryBtn" href=""><i class="iconfont">&#xf00b6;</i><p>百科</p></a>
         </div>
 
         <div class="entryWrap">
+            <a href="javascript:void(0)" id="closeWrap" class="sprite"></a>
             <div class="entryItem hide" id="slideShow2">
                 <div id="slideBtn2">
                     <a class="g-thide sprite prev" onselectstart="return false">上一张</a>
@@ -488,7 +489,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="entryItem hide">
+            <div class="entryItem hide" id="server">
                 <div class="serverName g-clr">
                     <strong>服 务 器:</strong>
                     <!--#CGIEXT# OutServerNameBegin:-->
