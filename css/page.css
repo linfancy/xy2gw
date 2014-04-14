@@ -158,11 +158,6 @@ footSell Âôµã
 .bgBlack{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#66000000', endColorstr='#66000000');background:rgba(0,0,0,0.4);}
 .introBg{width:198px;height: 40px;line-height: 40px;padding: 0 16px;position: absolute;bottom: 0;left: 0;z-index: 8}
 .introBg p{width:198px;overflow:hidden;color: #d4d4d4;font-size: 16px;text-align: center}
-.numShow{width:0; height:0;border-top:#000 15px solid;border-left:#000 15px solid;border-right:15px dashed transparent;border-bottom:15px dashed transparent;z-index: 10;position: absolute;top: 0;left: 0;_border-color: tomato;_filter: chroma(color=tomato);}
-.numShow i{display: block;color: #fff;position: absolute;top: -15px;left: -11px;}
-.numShowCurrent{border-top-color: #c93231;border-left-color: #c93231}
-.introDetailCurrent{left:-230px;opacity: 1;filter:alpha(opacity=100)}
-.smart1 .introDetailCurrent{left:0}
 @-webkit-keyframes flipInX{
     0%{-webkit-transform:perspective(400px) rotateX(60deg);opacity:0}
     40%{-webkit-transform:perspective(400px) rotateX(-10deg)}
