@@ -61,6 +61,32 @@ fabu.html为配套在发布系统的版本，可以作为学习模板。
 
  >--News9 热帖
 
+ >--Day1 周一
+
+ >--Day2 周二
+
+ >--Day3 周三
+
+ >--Day4 周四
+
+ >--Day5 周五
+
+ >--Day6 周六
+
+ >--Day7 周日
+
+ >--Entry1 快速入口
+
+ >--Entry2 快速入口2
+
+ >--Entry3 快速入口3
+
+ >--Entry4 周末活动
+
+ >--ServerName 服务器名称
+
+ >--ServerTime 服务器时间
+
  >--HotShow 热门推荐
 
  >--Editor 小编推荐
@@ -88,7 +114,6 @@ fabu.html为配套在发布系统的版本，可以作为学习模板。
  >--GuideCommon 常用攻略
 
  >--MovieZone 视频专区
-
 
 ###7.配置发布系统相关栏目 - 2014.4.8  16:15pm
 
