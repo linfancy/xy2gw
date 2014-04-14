@@ -208,6 +208,7 @@ footSell Âôµã
 .ftxtList .sIntro{width: 180px;overflow: hidden;height: 85px;}
 .ftxtList .sIntro p a{display:block;width: 238px;height: 16px;overflow: hidden;color: #c93231;font-size: 16px;font-weight: bold;margin-bottom: 18px;line-height:16px}
 .ftxtList blockquote{font-size: 12px;line-height: 24px}
+#fTabCont2 .sChannel{width: 60px;text-align: left}
 
 .secHot{height: 50px;padding: 0 20px;width: 360px;line-height: 50px;background: #e4e4e4;margin:8px 0 20px;position: relative;*zoom:1;overflow: hidden}
 .secHot .hot{position: absolute;top:20px;left: 20px}
