@@ -70,62 +70,26 @@ var gwFuns = {
         window.open(encodeURI("http://so.xy2.163.com/search?qs="+val));
     },
     switchSmart:function(){//轮播广告位
-        var listWrap = $('#secSwitch'),
-            listItem = $('#switchWrap li'),
-            listData = listWrap.find('.imgdata'),
-            totalImg = listData.length-1,
-            timer = null,
-            itemFlag = 0,
-            i = 0;
-        addImg(3);
-        listItem.hover(function(){//滑动出详情介绍
-            $(this).find('.numShow').toggleClass('numShowCurrent')
-            $(this).find('.introDetail').toggleClass('introDetailCurrent')
-        });
-        timer = setInterval(function(){
-            if(itemFlag <totalImg){
-                var num2 = itemFlag+3;
-                addImg(num2);
-            }else{
-                itemFlag = 0;
-            }
-        }, 5000)
-        listWrap.mouseenter(function() {
-            clearInterval(timer);
-        })
-        listWrap.mouseleave(function() {
-            clearInterval(timer);
-            timer = setInterval(function() {
-                if(itemFlag <totalImg){
-                    var num2 = itemFlag+3;
-                    addImg(num2);
-                }else{
-                    itemFlag = 0;
+        var listBlock = $('#secSwitch'),
+            listWrap = $('#switchWrap'),
+            listData = listBlock.find('.imgdata'),
+            totalImg = listData.length/ 4,
+            itemFlag = 0;
+            for(var i = 0;i<totalImg;i++){
+                var html = '<li><div class="imgWrap">';
+                for(var j = 0;j<4;j++,itemFlag++){
+                    html +='<a href="$link" target="_blank"><img src="$src" title="$title" width="229" height="123"/></a>'
+                        .replace('$src',listData.eq(itemFlag).data('images'))
+                        .replace('$title',listData.eq(itemFlag).data('title'))
+                        .replace('$link',listData.eq(itemFlag).data('href'));
                 }
-            }, 5000);
-        })
-        function addImg(num){
-            for(itemFlag;itemFlag<num;itemFlag++,i++){//加载三张到data中
-                    listItem.eq(i)
-                    .attr('data-images',listData.eq(itemFlag).data('images'))
-                    .attr('data-href',listData.eq(itemFlag).data('href'))
-                    .attr('data-title',listData.eq(itemFlag).data('title'));
+                html+='</div></li>'
+                listWrap.append(html);
             }
-            listItem.each(function(i){//加载三张在dom中，这样是为了防止切换时有空白显示
-                var t = $(this),
-                    imgfirst = t.find('img:first'),
-                    img = $(this).attr('data-images'),
-                    href = $(this).attr('data-href'),
-                    title = $(this).attr('data-title');
-                t.find('.imgWrap').append('<img src="'+img+'" alt="'+title+'" width="230" height="250" class="flipInX"/>');
-                t.find('.introBg').find('p').text(title);
-                t.find('a').attr('href',href+'?from=banner'+i);
-                setTimeout(function(){//删除前一张图片
-                    imgfirst.remove();
-                },2000)
-            })
-            i = 0;
-        }
+        gwFuns.scrollPics({//广告切换
+            currentTarget:'#secSwitch',
+            wrap: '#secSwitch'
+        });
     },
     scrollPics:function(opt){//图片幻灯片组件
         var settings = {
@@ -343,6 +307,7 @@ var gwFuns = {
             wrap: '#slideWrap2',
             autoplay : false
         });
+
 
     }
 }
