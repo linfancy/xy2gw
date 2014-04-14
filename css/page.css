@@ -384,22 +384,23 @@ footSell Âôµã
 .entryArea a:hover{background: #c93231;color: #fff;text-decoration: none}
 
 
-.block3 .dLeft .xy2Intro{margin-bottom: 8px}
+.block3 .dLeft .xy2Intro{margin-bottom: 26px}
 .xy2Intro .logo{width: 210px;height: 75px;background-position: 0 -792px;text-indent: -9999px}
 .xy2Intro p{color: #403f3f;font-size: 12px;line-height: 24px;text-indent: 2em;margin-top: 22px}
 
 .secVideo{margin-top: 28px}
 .secVideo .ListMore,.secVideo2 .ListMore{top: 20px;right: 14px}
 .secVideo .btnOra,.secVideo2 .btnOra{right: 48px;}
-.secVideo .ftxtList{margin-top: 4px;padding: 0}
-.secVideo .sTop{border-top: 1px solid #c3c3c3}
-.secVideo .ftxtList .sIntro{margin-left: 16px;width: 238px;}
+.secVideo .ftxtList{margin-top: 4px;padding: 0;background: #fff}
+.secVideo .ftxtList li,.secFight .ftxtList li{padding-right: 15px}
+.secVideo .sTop,.secFight .sTop{border-top: 1px solid #dddedd}
+.secVideo .ftxtList .sIntro{margin-left: 16px;width: 250px;}
 .secVideo .titleName{background-position: -4px -166px}
 
 .secFight{margin-top: 42px}
 .secFight .tukuTitle{width: 242px}
 .secFight .titleName{background-position: -4px -244px;width: 195px}
-.secFight .ftxtList {margin-top: 10px}
+.secFight .ftxtList {margin-top: 10px;background: #fff}
 #fightTeam{background: #fff;text-align: center;font-size: 18px;color: #000;font-weight: bold;font-family: "Microsoft YaHei";margin:6px 0 20px}
 #fightTeam strong{color: #c93231;font-size: 22px;}
 .fightShow a{display: block;border: 1px solid #c3c3c3;background: #f1f1f1;width: 458px;height: 33px;line-height: 33px;text-align: center;color: #717171;font-size: 12px}
@@ -417,7 +418,7 @@ footSell Âôµã
 
 .secXixing{margin-top: 37px;}
 .secXixing .titleName{background-position: -2px -284px}
-.secXixing iframe{margin-top: 15px}
+.secXixing iframe{margin-top: 13px}
 /*µ¯²ãÃÉ°æ*/
 #NIE-overlayer{display:none;position:absolute;width:100%;height:100%;background:#000;filter:alpha(opacity=80);opacity:.8;top:10px;left:0;z-index:99}
 .mod-share{text-align:center;color:#4e4e4e;width:806px;height:37px;line-height:37px;margin:0 auto;
