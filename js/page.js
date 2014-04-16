@@ -293,6 +293,31 @@ var gwFuns = {
             $(this).html(html);
         })
     },
+    teamShow:function(){
+        $('#btnEditor').click(function(){
+            var t = $(this)
+            if(!(t.hasClass('hideEditor'))){
+                t.addClass('hideEditor');
+                $('#fotSellBlock').animate({'width':'0'},400);
+                $('#teamPart')
+                    .css('overflow','hidden')
+                    .fadeIn()
+                    .animate({'width':'702px'},100,function(){
+                        $(this).css('overflow','visible');
+                    })
+
+            }else{
+                t.removeClass('hideEditor');
+                $('#teamPart').hide().animate({'width':'0'},100);
+                $('#fotSellBlock').animate({'width':'805px'},400);
+            }
+        })
+        $( ".teamPart").find('li').hover(function() {
+            $(this).find('.teamIntro').stop().animate({'opacity':'1'},200)
+        },function(){
+            $(this).find('.teamIntro').stop().animate({'opacity':'0'},200)
+        });
+    },
     initFun:function(){
         gwFuns.lunboInit();//版头轮播
         gwFuns.switchSmart();//广告轮播
@@ -307,7 +332,7 @@ var gwFuns = {
             wrap: '#slideWrap2',
             autoplay : false
         });
-
+        gwFuns.teamShow()//团队介绍
 
     }
 }

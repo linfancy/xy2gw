@@ -12,6 +12,7 @@
     aside
         --nieShare 分享组件
     footer
+        --fotSell 卖点
 #修改记录：
 
 =====================================*/
@@ -27,11 +28,12 @@ html{color:#000}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,field
     url('font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
     url('font/iconfont.svg#uxiconfont') format('svg'); /* iOS 4.1- */
 }
-.iconfont{font-family:"iconfont",sans-serif;font-size:16px;font-style:normal;-webkit-font-smoothing: antialiased;-webkit-text-stroke-width: 0.2px;}
+.iconfont{display: block;font-family:"iconfont",sans-serif;font-size:16px;font-style:normal;-webkit-font-smoothing: antialiased;-webkit-text-stroke-width: 0.2px;cursor: pointer}
 .btnOra{display: block;width: 62px;height:22px;line-height:22px;padding: 0 4px;text-align: center;background: #f2b053;color: #fff;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;position: absolute;top: 20px;right: 0;}
+.btnOra:hover{text-decoration:none;background: #f8a633}
 /*=====================================
 版块Layout
 =====================================*/
@@ -49,6 +51,7 @@ aside,footer{background-color:#dddedd}
 header{height: 445px}
 aside{height: 112px;background: url(../img/bg3.jpg) no-repeat center bottom;padding-top: 20px;}
 footer{height: 380px}
+article{*height:2252px}
 .main{width: 1160px;margin: 0 auto;position: relative;zoom: 1;padding: 0 20px}
 .dLeft,.dMid,.dRight{float: left}
 .dLeft{width: 240px;margin-right: 30px}
@@ -104,7 +107,7 @@ section{position: relative;zoom: 1}
 #bannerShowItem li a:hover{text-decoration: none}
 .lunboNav{width:200px;height:62px;float: right;padding-top: 10px}
 .lunboNavBtn{display: block;width: 50%;height: 62px;float: left}
-#moreBtn{display: block;width: 146px;height: 44px;position: absolute;top: 304px;left: 302px;z-index: 99;background-position: -268px -568px}
+#moreBtn{display: block;width: 146px;height: 44px;position: absolute;top: 304px;left: 20px;z-index: 99;background-position: -268px -568px}
 /*=====================================
 官网相关模块
 sec+功能
@@ -149,7 +152,7 @@ footSell 卖点
 .secSwitch{width: 100%;height: 250px;position: relative;*zoom:1;margin-top: 14px;overflow:hidden}
 #switchWrap{width: 9999px;position: relative}
 .secSwitch li{width:460px;float: left;overflow: hidden}
-.secSwitch .imgWrap{margin-right: -10px;}
+.secSwitch .imgWrap{margin-right: -10px;*zoom:1}
 .secSwitch li img,.secSwitch li a{display:block;width:229px;height:123px}
 .secSwitch li a{float: left;margin: 0 2px 2px 0}
 #slideBtn3{position: absolute;z-index: 10}
@@ -191,7 +194,7 @@ footSell 卖点
 .ftxtList .sTitle a{color: #403f3f}
 .ftxtList .sTitle .red,.ftxtList blockquote a{color:#c93231;}
 .ListMore{display: block;width: 20px;height: 20px;background: #fff;border: 1px solid #c7c7c6;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;position: absolute;right: 0;text-align: center;color: #c93231;font-size: 18px;font-weight: bold}
-.ListMore:hover{text-decoration: none;}
+.ListMore:hover{text-decoration: none;background: #c93231;color: #fff}
 .dMid .ListMore{top: -33px;}
 .dRight .ListMore{top:-30px}
 .ftxtList .sTop{padding: 15px 28px;background:url(../img/sTop.jpg) #fff repeat-x bottom;height: 89px;text-align: left;margin-bottom: 16px}
@@ -211,9 +214,9 @@ footSell 卖点
 .entryInner{margin-right: -5px;}
 .secEntry .entryBtn{display: block;width: 79px;height: 94px;border: 1px solid #e4e4e4;background:#fff;float: left;text-align: center;margin:0 -1px -1px 0;position: relative;z-index: 10}
 .secEntry .current{border-bottom: 0;height:96px}
+.secEntry .entryBtn i{display: block;font-size:30px;margin:27px 0 6px 0;color: #bbb}
 .secEntry .entryBtn:hover{text-decoration: none}
 .secEntry .entryBtn:hover i{-webkit-animation: toTopFromBottom .3s forwards;-moz-animation: toTopFromBottom .3s forwards;}
-.secEntry .entryBtn i{display: block;font-size:30px;margin:27px 0 6px 0;color: #bbb}
 .secEntry .entryBtn p{color: #000;font-size: 14px}
 .secEntry .entryArrow{width: 5px;display: block;margin: 4px auto;}
 .secEntry .entryArrow span,.secEntry .entryArrow em{position: static;display: block;width: 0;top: 0;left: 0;height: 0;border-color: rgba(255,255,255,0);border-color: transparent\0;_border-color: tomato;_filter: chroma(color=tomato);border-style: solid;overflow: hidden;border-width: 5px 5px 0;}
@@ -315,9 +318,10 @@ footSell 卖点
 .tukuM a{;display: block;width: 117px;text-align:center;height: 33px;color: #000;position: relative;z-index: 10;font-size: 16px;font-weight: bold}
 .tukuM a.current,.tukuM a:hover{color: #c93231;text-decoration: none}
 .picBtn6{color: #fff;font-size: 16px;display: block;width: 116px;height: 33px;line-height: 32px;background: #c93231;text-align: center;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;margin-left: 24px}
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;margin-left: 24px}
+.picBtn6:hover{text-decoration: none;background: #dd4b4a}
 .picTabCont{position: relative;*zoom:1;width:888px;height: 232px;top: 10px;}
 .picList{margin:0 -5px -3px 0;position: absolute;top: 0;left: 0;opacity: 0;filter:alpha(opacity=0)}
 .picList li{float: left;position: relative;width: 176px;height: 146px;*zoom:1;overflow: hidden;margin:0 2px 2px 0;-moz-box-shadow:0px 0px 10px rgba(0,0,0,0.2); -webkit-box-shadow:0px 0px 10px rgba(0,0,0,0.2); box-shadow:0px 0px 10px rgba(0,0,0,0.2);}
@@ -328,7 +332,13 @@ footSell 卖点
 /*=====================================
 下部
 =====================================*/
-.block3 .dLeft .secBanner{height: 161px;background-position: 0 -935px;position: relative;*zoom:1}
+.block3 .dLeft .line{height: 3px;background: #9b9b9b}
+.block3 .dLeft{background: #dddedd;}
+.block3 .dLeft section{padding: 0 15px;width: 210px;margin:20px 0 42px;position: relative;*zoom:1;*margin-bottom: 37px}
+.block3 .ListMore{right: 15px;top: 0}
+.block3 .dLeft section h3{color: #000;font-size: 16px;font-weight: bold;margin-bottom: 18px;}
+
+.block3 .dLeft .secBanner{width:180px;height: 161px;background-position: 0 -935px;position: relative;*zoom:1;*margin-bottom: 0}
 .block3 .secBanner a{display: block;width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: 12}
 .block3 .secBanner p{width:210px;height: 44px;line-height: 44px;color: #ffe9e9;font-size: 16px;text-align: center;position: absolute;bottom: 0;left: 0;background: #c93231}
 .block3 .secBanner p em{display:inline-block;width: 16px;height: 16px;line-height:16px;color: #c93231;background: #ffe9e9;margin-right: 4px}
@@ -338,24 +348,21 @@ footSell 卖点
 .secEntry2 li a.red{color: #c93231}
 .secEntry2 li a:hover{text-decoration: none;background-position: -282px -660px;color: #fff}
 
-.block3 .dLeft .line{height: 3px;background: #9b9b9b}
-.block3 .dLeft{background: #dddedd;}
-.block3 .dLeft section{padding: 0 15px;width: 210px;margin:20px 0 42px;position: relative;*zoom:1}
-.block3 .ListMore{right: 15px;top: 0}
-.block3 .dLeft section h3{color: #000;font-size: 16px;font-weight: bold;margin-bottom: 18px;}
 
 #slideShow{width: 210px;position: relative;*zoom:1;}
 #slideWrap{width: 210px;height: 127px;position: relative;overflow:hidden;}
 #slideBtn{position: absolute;top: 0;right: 14px;width: 48px;height: 22px;}
 #slideBtn a{position: absolute;width: 22px;height: 22px;z-index: 99;top:0px;cursor: pointer}
 #slideBtn .prev{background-position:-357px -55px;left:0px}
+#slideBtn .prev:hover{background-position: -262px -55px}
 #slideBtn .next{background-position:-390px -55px;right:0px}
+#slideBtn .next:hover{background-position: -294px -55px}
 #slideShow ul{width: 9999px;position: absolute;top:0;left:0}
 #slideShow li{float: left;}
 #slideShow ul li{width: 210px;}
 #slideShow ul li img{display: block;width: 210px;height: 95px}
 #slideShow ul li a{display: block;background-color: #f1f1f1;color: #838383;height: 30px;line-height: 30px;text-align: center;background-position: -339px -753px;}
-
+#slideShow ul li a:hover{background-color: #c93231;color: #fff;text-decoration: none;background-position: -340px -800px}
 .secGuide{position: relative;zoom: 1}
 .secGuide,.secRaiders{margin-top: -18px}
 .GuideTitle .titleName{background-position: -7px -46px}
@@ -381,6 +388,7 @@ footSell 卖点
 
 .secVideo{margin-top: 28px}
 .secVideo .ListMore,.secVideo2 .ListMore{top: 20px;right: 14px}
+.secGuide .ListMore,.secXixing .ListMore{top: 20px;right: 10px}
 .secVideo .btnOra,.secVideo2 .btnOra{right: 48px;}
 .secVideo .ftxtList{margin-top: 4px;padding: 0;background: #fff}
 .secVideo .ftxtList li,.secFight .ftxtList li{padding-right: 15px}
@@ -401,9 +409,10 @@ footSell 卖点
 .secVideo2{margin-top: 27px}
 .secVideo2 .titleName{background-position: -2px -207px}
 .secVideo2 .fListVideo{margin-top: 3px}
+.secVideo2 .fListVideo li{margin-bottom: 1px;*margin-bottom: -5px}
 .secVideo2 .fListVideo a.fltL{display: block;width: 210px;height: 115px;position: relative;*zoom:1;margin-bottom: -1px}
 .secVideo2 .fListVideo a em{display: block;width: 54px;height: 54px;background-position: -370px -857px;position: absolute;top: 40px;left: 90px;}
-.secVideo2 .fListVideo .vIntro{width:190px;height: 115px;border:  1px solid #dddedd;border-right: 0;border-left:0;position: relative;*zoom:1;margin-bottom: -1px}
+.secVideo2 .fListVideo .vIntro{width:190px;height: 113px;border:  1px solid #dddedd;border-right: 0;border-left:0;position: relative;*zoom:1;}
 .secVideo2 .fListVideo .vIntro p{color: #000;font-size: 16px;position: absolute;top: 22px;left: 22px;font-weight: bold;width: 190px;overflow: hidden;}
 .secVideo2 .fListVideo .vIntro blockquote{color: #616161;line-height: 24px;width: 172px;position: absolute;top: 50px;left: 22px;font-family: simSun}
 
@@ -425,7 +434,21 @@ aside .fltR{width: 20px;height: 36px;background-position: -20px 0}
 .mod-share #share a{padding:0 18px 0 2px;color:#4e4e4e}
 .mod-share #share a:hover{text-decoration:underline}
 #hotShow{display: block;width: 124px;height: 83px;background-position: -290px -416px;position: fixed;right: 0;bottom:0}
-footer{text-align:center;clear:both;line-height:60px;position: relative;margin:0 auto;}
+
+footer{text-align:center;clear:both;line-height:60px;position: relative;margin:0 auto;overflow: visible}
+.fotSell{width:1142px;margin:0 auto;padding: 64px 0;border-bottom: 1px solid #bfbfbf}
+.fotSell img{display: block;}
+.showEditor{display: block;width: 40px;height: 21px;background-position: -250px -136px;margin: 15px 0 0 15px}
+.showEditor:hover{background-position: -250px -158px}
+.hideEditor{background-position: -250px -179px}
+.hideEditor:hover{background-position: -250px -202px}
+.teamPart{height: 100px;width: 0;display: none;margin: -25px 0 -23px 0}
+.teamPart li{float: left;position: relative;width: 78px;height: 100px;}
+.teamPart li img{display:block;width: 54px;height: 54px;margin: 0 auto;-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;vertical-align: middle;}
+.teamPart li .teanName{color: #7c7c7c;line-height: 20px;text-align: center;margin-top: 8px}
+.teamPart li .teanName strong{color: #2c2c2c;font-weight: bold}
+.teamPart li .teamIntro{border: 1px solid #7a7769;position: absolute;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;top: -110px;left: -27px;opacity: 0;filter:alpha(opacity=0)}
+.teamPart li .teamIntro p{padding: 12px;width:98px;color: #fff;text-align: left;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;border: 1px solid #e8d0a7;line-height: 26px;font-size: 14px}
 footer{color: #4d4d4d}
 footer a{color:#c93231;text-decoration:none;}
 footer a:hover{text-decoration:underline;}
