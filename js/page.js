@@ -86,6 +86,11 @@ var gwFuns = {
                 html+='</div></li>'
                 listWrap.append(html);
             }
+        listBlock.hover(function(){
+            $('#slideBtn3').show()
+        },function(){
+            $('#slideBtn3').hide()
+        })
         gwFuns.scrollPics({//π„∏Ê«–ªª
             currentTarget:'#secSwitch',
             wrap: '#secSwitch'
