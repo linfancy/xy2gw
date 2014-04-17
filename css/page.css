@@ -68,6 +68,7 @@ section{position: relative;zoom: 1}
 .secTitle .titleName{display: block;width: 98px;float: right;height: 24px;margin-top: 18px;}
 .current{display: block!important;}
 .bgBlack{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#66000000', endColorstr='#66000000');background:rgba(0,0,0,0.4);}
+.red{color:#c93231}
 /*=====================================
 顶部导航
 =====================================*/
@@ -157,7 +158,7 @@ footSell 卖点
 #switchWrap{width: 9999px;position: relative;z-index: 10}
 .secSwitch ul li{width:460px;float: left;overflow: hidden}
 .secSwitch .imgWrap{margin-right: -10px;*zoom:1}
-.secSwitch ul li img,.secSwitch ul li a{display:block;width:229px;height:123px}
+.secSwitch ul li img,.secSwitch ul li a{display:block;width:229px;height:124px}
 .secSwitch ul li a{float: left;margin: 0 2px 2px 0;position: relative;overflow: hidden}
 .secSwitch ul li a p{position: absolute;font-size:16px;font-weight: bold;left:20px}
 .secSwitch ul li a:hover p{color:#c93231}
@@ -211,7 +212,7 @@ footSell 卖点
 .dMid .sTitle{width: 328px}
 .dRight .sTitle{width: 280px}
 .ftxtList .sTitle a{color: #403f3f}
-.ftxtList .sTitle .red,.ftxtList blockquote a{color:#c93231;}
+.ftxtList blockquote a{color:#c93231;}
 .ListMore{display: block;width: 20px;height: 20px;background: #fff;border: 1px solid #c7c7c6;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;position: absolute;right: 0;text-align: center;color: #c93231;font-size: 18px;font-weight: bold}
 .ListMore:hover{text-decoration: none;background: #c93231;color: #fff}
 .dMid .ListMore{top: -33px;}
@@ -289,7 +290,7 @@ footSell 卖点
 .block2 .dLeft .ListMore{top: 22px}
 .PicTitle .titleName{background-position: -109px -285px}
 .picWrap{background:#fff;margin-top:10px;-moz-box-shadow:0px 0px 10px rgba(0,0,0,0.2); -webkit-box-shadow:0px 0px 10px rgba(0,0,0,0.2); box-shadow:0px 0px 10px rgba(0,0,0,0.2);}
-.picWrap .fListWrap{padding: 0 15px 9px}
+.picWrap .fListWrap{padding: 0 15px 10px}
 .txtImg{width: 210px;height: 115px;position: relative;*zoom:1;margin-bottom: 18px}
 .txtImg img{display: block}
 .block2 .txtImg{width: 240px;height: auto}
@@ -342,9 +343,9 @@ footSell 卖点
     border-radius: 3px;margin-left: 24px}
 .picBtn6:hover{text-decoration: none;background: #dd4b4a}
 .picTabCont{position: relative;*zoom:1;width:888px;height: 232px;top: 10px;}
-.picList{margin:0 -5px -3px 0;position: absolute;top: 0;left: 0;opacity: 0;filter:alpha(opacity=0)}
-.picList li{float: left;position: relative;width: 176px;height: 146px;*zoom:1;overflow: hidden;margin:0 2px 2px 0;-moz-box-shadow:0px 0px 10px rgba(0,0,0,0.2); -webkit-box-shadow:0px 0px 10px rgba(0,0,0,0.2); box-shadow:0px 0px 10px rgba(0,0,0,0.2);}
-.picList li a,.picList li img{display: block;width: 176px;height: 115px;overflow: hidden;}
+.picList{margin:0 -10px -3px 0;position: absolute;top: 0;left: 0;opacity: 0;filter:alpha(opacity=0)}
+.picList li{float: left;position: relative;width: 175px;height: 146px;*zoom:1;overflow: hidden;margin:0 4px 4px 0;-moz-box-shadow:0px 0px 10px rgba(0,0,0,0.2); -webkit-box-shadow:0px 0px 10px rgba(0,0,0,0.2); box-shadow:0px 0px 10px rgba(0,0,0,0.2);}
+.picList li a,.picList li img{display: block;width: 175px;height: 115px;overflow: hidden;}
 .picList li a:hover img{-webkit-transform:scale(1.1,1.1);-ms-transform:scale(1.1,1.1);}
 .picList li .bgBlack{background:#fff;height: 30px;line-height: 30px;text-align: center;position: absolute;width: 100%;bottom: 0;left: 0;}
 .picList li .bgBlack p{color: #232323}
