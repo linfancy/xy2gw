@@ -135,7 +135,6 @@ var gwFuns = {
                     currentIndex = 0;
                 }
                 tab.removeClass('current').eq(currentIndex).addClass('current');
-
                 ul.stop().animate({
                     "left": -(li_w*currentIndex)
                 }, 300)

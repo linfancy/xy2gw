@@ -161,10 +161,7 @@ footSell Âôµã
 .bannerIntro{top: 56px;left: 8px}
 .secSwitch ol{width: 95px;height: 9px;padding:7px 0;background-position: -247px -286px;position: absolute;left:50%;margin-left: -47px;top: 110px;z-index: 40;text-align:justify;}
 .secSwitch ol li{float:left;}
-.secSwitch ol li i{display: block;width: 9px;height: 9px;background: #9b9b9b;margin: 0 auto;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;}
+.secSwitch ol li i{display: block;width: 9px;height: 9px;background: #9b9b9b;margin: 0 auto;-webkit-border-radius: 50%; -moz-border-radius: 50%;border-radius: 50%;}
 .secSwitch ol li.current i{background: #c93231}
 #slideBtn3{display: none}
 #slideBtn3 a{display: block;width: 35px;height: 35px;top: 104px;position: absolute;z-index: 20;vertical-align: middle}
