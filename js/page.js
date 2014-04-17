@@ -78,14 +78,20 @@ var gwFuns = {
             for(var i = 0;i<totalImg;i++){
                 var html = '<li><div class="imgWrap">';
                 for(var j = 0;j<4;j++,itemFlag++){
-                    html +='<a href="$link" target="_blank"><img src="$src" title="$title" width="229" height="123"/></a>'
-                        .replace('$src',listData.eq(itemFlag).data('images'))
-                        .replace('$title',listData.eq(itemFlag).data('title'))
-                        .replace('$link',listData.eq(itemFlag).data('href'));
+                    if(listData.eq(itemFlag).length !=0){
+                        html +='<a href="$link" target="_blank"><img src="$src" title="$title" width="229" height="123"/></a>'
+                            .replace('$src',listData.eq(itemFlag).data('images'))
+                            .replace('$title',listData.eq(itemFlag).data('title'))
+                            .replace('$link',listData.eq(itemFlag).data('href'));
+                    }
                 }
                 html+='</div></li>'
+                listBlock.find('ol').append('<li><i></i></li>')
                 listWrap.append(html);
             }
+        var l = listBlock.find('ol').find('li');
+        l.css('width', parseInt(95/ l.length)+'px');
+
         listBlock.hover(function(){
             $('#slideBtn3').show()
         },function(){
@@ -93,7 +99,8 @@ var gwFuns = {
         })
         gwFuns.scrollPics({//¹ã¸æÇÐ»»
             currentTarget:'#secSwitch',
-            wrap: '#secSwitch'
+            wrap: '#secSwitch',
+            tab:'.secSwitch ol li'
         });
     },
     scrollPics:function(opt){//Í¼Æ¬»ÃµÆÆ¬×é¼þ
@@ -118,7 +125,7 @@ var gwFuns = {
             tab = $(settings.tab),
             timer = null,
             currentIndex = 0;
-        //tab.eq(currentIndex).addClass('current');
+        tab.eq(currentIndex).addClass('current');
         ul.css('width',li_w*li_len)
         if(li_len > settings.minNum){
             right.click(function() {
@@ -139,6 +146,13 @@ var gwFuns = {
                 }
                 tab.removeClass('current').eq(currentIndex).addClass('current');
 
+                ul.stop().animate({
+                    "left": -(li_w*currentIndex)
+                }, 300)
+            });
+            tab.click(function(){
+                currentIndex = $(this).index(settings.tab);
+                tab.removeClass('current').eq(currentIndex).addClass('current');
                 ul.stop().animate({
                     "left": -(li_w*currentIndex)
                 }, 300)

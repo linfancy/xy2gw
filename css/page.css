@@ -151,10 +151,17 @@ footSell 卖点
 /*广告切换*/
 .secSwitch{width: 100%;height: 250px;position: relative;*zoom:1;margin-top: 14px;overflow:hidden}
 #switchWrap{width: 9999px;position: relative;z-index: 10}
-.secSwitch li{width:460px;float: left;overflow: hidden}
+.secSwitch ul li{width:460px;float: left;overflow: hidden}
 .secSwitch .imgWrap{margin-right: -10px;*zoom:1}
-.secSwitch li img,.secSwitch li a{display:block;width:229px;height:123px}
-.secSwitch li a{float: left;margin: 0 2px 2px 0}
+.secSwitch ul li img,.secSwitch ul li a{display:block;width:229px;height:123px}
+.secSwitch ul li a{float: left;margin: 0 2px 2px 0}
+.secSwitch ol{width: 95px;height: 9px;padding:7px 0;background-position: -247px -286px;position: absolute;left:50%;margin-left: -47px;top: 110px;z-index: 40;text-align:justify;}
+.secSwitch ol li{float:left;}
+.secSwitch ol li i{display: block;width: 9px;height: 9px;background: #9b9b9b;margin: 0 auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;}
+.secSwitch ol li.current i{background: #c93231}
 #slideBtn3{display: none}
 #slideBtn3 a{display: block;width: 35px;height: 35px;top: 104px;position: absolute;z-index: 20;vertical-align: middle}
 #slideBtn3 a i{display: block;width: 14px;height: 21px;margin: 6px auto}
@@ -221,7 +228,7 @@ footSell 卖点
 .entryInner{margin-right: -5px;}
 .secEntry .entryBtn{display: block;width: 79px;height: 94px;border: 1px solid #e4e4e4;background:#fff;float: left;text-align: center;margin:0 -1px -1px 0;position: relative;z-index: 10}
 .secEntry .current{border-bottom: 0;height:96px}
-.secEntry .entryBtn i{display: block;font-size:30px;margin:27px 0 6px 0;color: #bbb}
+.secEntry .entryBtn i{display: inline-block;font-size:30px;margin:27px 0 -2px 0;color: #bbb;line-height: 32px}
 .secEntry .entryBtn:hover{text-decoration: none}
 .secEntry .entryBtn:hover i{-webkit-animation: toTopFromBottom .3s forwards;-moz-animation: toTopFromBottom .3s forwards;}
 .secEntry .entryBtn p{color: #000;font-size: 14px}
