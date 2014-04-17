@@ -107,7 +107,12 @@ section{position: relative;zoom: 1}
 #bannerShowItem li a:hover{text-decoration: none}
 .lunboNav{width:200px;height:62px;float: right;padding-top: 10px}
 .lunboNavBtn{display: block;width: 50%;height: 62px;float: left}
-#moreBtn{display: block;width: 146px;height: 44px;position: absolute;top: 304px;left: 20px;z-index: 99;background-position: -268px -568px}
+#moreBtn{display: block;width: 146px;height: 44px;position: absolute;top: 304px;left: 20px;z-index: 99;background-position: -268px -568px;z-index: 99}
+#serverBlock{position: absolute;left: 182px;top: 302px;z-index: 99}
+#serverBlock h3{font-size: 18px;color: #000;font-weight: bold;line-height: 26px}
+#serverBlock li{float: left;margin-right: 10px}
+#serverBlock li a{display: block;float: left;color: #795225;font-size: 14px;}
+#serverBlock li .hot{margin: 5px 0 0 2px}
 /*=====================================
 官网相关模块
 sec+功能
