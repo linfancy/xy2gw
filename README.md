@@ -85,6 +85,8 @@ fabu.html为配套在发布系统的版本，可以作为学习模板。
 
  >--ServerName 服务器名称
 
+ >--ServerName2 版头服务器
+
  >--ServerTime 服务器时间
 
  >--HotShow 热门推荐
@@ -114,6 +116,8 @@ fabu.html为配套在发布系统的版本，可以作为学习模板。
  >--GuideCommon 常用攻略
 
  >--MovieZone 视频专区
+
+ >--TeamWork 官网团队
 
 ###7.配置发布系统相关栏目 - 2014.4.8  16:15pm
 
