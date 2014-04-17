@@ -154,7 +154,11 @@ footSell Âôµã
 .secSwitch ul li{width:460px;float: left;overflow: hidden}
 .secSwitch .imgWrap{margin-right: -10px;*zoom:1}
 .secSwitch ul li img,.secSwitch ul li a{display:block;width:229px;height:123px}
-.secSwitch ul li a{float: left;margin: 0 2px 2px 0}
+.secSwitch ul li a{float: left;margin: 0 2px 2px 0;position: relative;overflow: hidden}
+.secSwitch ul li a p{position: absolute;font-size:16px;font-weight: bold}
+.secSwitch ul li a:hover p{color:#c93231}
+.bannerTitle{top: 35px;left: 8px}
+.bannerIntro{top: 56px;left: 8px}
 .secSwitch ol{width: 95px;height: 9px;padding:7px 0;background-position: -247px -286px;position: absolute;left:50%;margin-left: -47px;top: 110px;z-index: 40;text-align:justify;}
 .secSwitch ol li{float:left;}
 .secSwitch ol li i{display: block;width: 9px;height: 9px;background: #9b9b9b;margin: 0 auto;

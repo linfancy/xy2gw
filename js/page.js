@@ -79,10 +79,11 @@ var gwFuns = {
                 var html = '<li><div class="imgWrap">';
                 for(var j = 0;j<4;j++,itemFlag++){
                     if(listData.eq(itemFlag).length !=0){
-                        html +='<a href="$link" target="_blank"><img src="$src" title="$title" width="229" height="123"/></a>'
+                        html +='<a href="$link" target="_blank"><img src="$src" alt="title" width="229" height="123"/><p class="bannerTitle">title</p><p class="bannerIntro">$intro</p></a>'
                             .replace('$src',listData.eq(itemFlag).data('images'))
-                            .replace('$title',listData.eq(itemFlag).data('title'))
-                            .replace('$link',listData.eq(itemFlag).data('href'));
+                            .replace(/title/g,listData.eq(itemFlag).data('title'))
+                            .replace('$link',listData.eq(itemFlag).data('href'))
+                            .replace('$intro',listData.eq(itemFlag).data('intro'));
                     }
                 }
                 html+='</div></li>'
