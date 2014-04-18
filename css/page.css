@@ -22,11 +22,11 @@
 html{color:#000}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}article,aside,audio,bdi,canvas,datalist,details,figcaption,figure,footer,header,keygen,mark,meter,nav,output,progress,rp,rt,ruby,section,source,summary,time,track,video,title{display:block}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}li{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}html,body{height:100%;background-color:#fff;margin:0;padding:0}body{font-family:"Microsoft YaHei",simSun,"Lucida Grande","Lucida Sans Unicode",Arial;line-height:170%;font-size:12px;color:#000}i{font-style:normal}a{color:#000;text-decoration:none}a:hover{text-decoration:underline}a.under:link,a.under:active,a.under:visited,a.under:hover{text-decoration:underline}.fltL{float:left}.fltR{float:right}.fixR{position:absolute;top:0;right:0}.setCenter{margin:0 auto}.clrB{clear:both}.clrL{clear:left}.clrR{clear:right}.clrN{clear:none}.g-clr{*zoom:1}.g-clr:after{display:block;clear:both;height:0;content:"\0020"}.b{font-weight:bold}.n{font-weight:normal}.txtC{text-align:center}.g-thide{text-indent:-9999px}.hide{display:none !important}
 .numShow,.picList li img,.tukuM a,.imgWrap{transition:all .5s ease-in-out;-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out}
 @font-face {font-family: 'iconfont';
-    src: url('font/iconfont.eot'); /* IE9*/
-    src: url('font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('font/iconfont.woff') format('woff'), /* chrome、firefox */
-    url('font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url('font/iconfont.svg#uxiconfont') format('svg'); /* iOS 4.1- */
+    src: url('http://xy2.163.com/2014/gw/iconfont.eot'); /* IE9*/
+    src: url('http://xy2.163.com/2014/gw/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('http://xy2.163.com/2014/gw/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('http://xy2.163.com/2014/gw/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('http://xy2.163.com/2014/gw/iconfont.svg#uxiconfont') format('svg'); /* iOS 4.1- */
 }
 .iconfont{display: block;font-family:"iconfont",sans-serif;font-size:16px;font-style:normal;-webkit-font-smoothing: antialiased;-webkit-text-stroke-width: 0.2px;cursor: pointer}
 .btnOra{display: block;width: 62px;height:22px;line-height:22px;padding: 0 4px;text-align: center;background: #f2b053;color: #fff;
@@ -290,7 +290,7 @@ footSell 沢泣
 .block2 .dLeft .ListMore{top: 22px}
 .PicTitle .titleName{background-position: -109px -285px}
 .picWrap{background:#fff;margin-top:10px;-moz-box-shadow:0px 0px 10px rgba(0,0,0,0.2); -webkit-box-shadow:0px 0px 10px rgba(0,0,0,0.2); box-shadow:0px 0px 10px rgba(0,0,0,0.2);}
-.picWrap .fListWrap{padding: 0 15px 10px}
+.picWrap .fListWrap{padding: 0 15px 11px}
 .txtImg{width: 210px;height: 115px;position: relative;*zoom:1;margin-bottom: 18px}
 .txtImg img{display: block}
 .block2 .txtImg{width: 240px;height: auto}
