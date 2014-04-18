@@ -164,4 +164,18 @@ fabu.html为配套在发布系统的版本，可以作为学习模板。
 
 >版头增加新服推荐
 
-###12.基本完成所有交互，开始兼容性测试 - 2014.4.17
+###12.基本完成所有交互，开始兼容性测试 - 2014.4.18
+
+> Firefox下出现无法支持CSS3字体的问题，是因为字体文件的跨域问题
+
+  ```html
+ 解决方法：
+ 发邮件给游戏部的SA，帮忙加响应头部
+
+ 收件人：caifeng<caifeng@corp.netease.com>
+ 抄送：wyhuang<wyhuang@corp.netease.com>, ftan<ftan@corp.netease.com>
+ 邮件格式：
+ Hi 蔡锋：
+ 　　大话2官网使用CSS3自定义字体（@font-face）来制作纯色图标，字体文件的调用涉及跨域问题，需要在文件的http响应头部添加： Access-Control-Allow-Origin:*
+ 涉及文件是线上 /xy2_2012_all/xy2_2012/2014/gw/  目录下所有文件，感谢！
+ ```
