@@ -6,6 +6,11 @@ fabu.html为配套在发布系统的版本，可以作为学习模板。
 
 整个文件夹可以作为一个参考demo，这个分支作为一个改版的记录
 
+*制作软件：Webstorm8
+
+*压缩文件：<a href="http://tool.css-js.com/" target="_blank">http://tool.css-js.com/</a>
+
+
 改版记录：
 ---------
 ###1.接到设计稿并开始相关规划 - 2014.3.15
