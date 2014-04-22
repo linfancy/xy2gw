@@ -76,7 +76,6 @@ $(function(){
         }
         num[0] = num[1]+num[2]+num[3]+num[4];
         for(var k = 0;k<num.length;k++){
-            console.log(num[k]);
             if(num[k]){
                 if(k<=4){
                     tab1.eq(k).append('<em class="sprite">'+num[k]+'</em>')
