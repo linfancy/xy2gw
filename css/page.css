@@ -1,6 +1,7 @@
 /*=====================================
 #创建时间：2014-3
 #创建人：方阳
+#压缩地址：http://tool.css-js.com/ css和js都可以在此压缩
 #基本结构：
     header
         --nav#topNav 顶部导航
@@ -147,6 +148,7 @@ footSell 卖点
 .secBanner .btn{margin-bottom: 10px}
 .btn4,.btn5,.btn6{height: 60px}
 .btn7{height: 95px}
+#downFlash{width: 300px;height: 280px;position: absolute;top: 0;left: -55px;z-index: 80}
 
 /*搜索*/
 .fSearch{width: 100%;position: relative;*zoom:1}
@@ -194,7 +196,8 @@ footSell 卖点
 .dMid .secTabList{margin-top: 21px}
 .fTabCont{position: relative;*zoom:1;}
 .fTabNav {height:42px;}
-.fTabNav li {float:left;width:78px;height:42px;}
+.fTabNav li {float:left;width:78px;height:42px;position: relative}
+.fTabNav li em{display: block;width: 15px;height: 15px;background-position: -277px -1035px;position: absolute;top: 6px;right: 6px;color: #fff;text-align: center;line-height: 15px}
 .fTabNav li a {display:block;height:42px;background:#e4e4e4;color:#474747;text-align:center;font-size:14px;line-height:42px;}
 .fTabNav li.current a {background:#fff;}
 .secGuide .ftxtList{padding-top: 20px}
@@ -223,6 +226,7 @@ footSell 卖点
 .ftxtList .sIntro p a{display:block;width: 238px;height: 16px;overflow: hidden;color: #c93231;font-size: 16px;font-weight: bold;margin-bottom: 18px;line-height:16px}
 .ftxtList blockquote{font-size: 12px;line-height: 24px}
 .fTabCont1 .sChannel{width: 60px;text-align: left}
+#fTabNav2 li{width: 72px}
 
 .secHot{height: 50px;padding: 0 20px;width: 360px;line-height: 50px;background: #e4e4e4;margin:8px 0 20px;position: relative;*zoom:1;overflow: hidden}
 .secHot .hot{position: absolute;top:20px;left: 20px}

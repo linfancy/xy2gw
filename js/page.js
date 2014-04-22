@@ -21,11 +21,49 @@ $(function(){
         });
     },0);
 
-    var nieFun =['ui.tab',"util.share","nie.util.share","ui.Switch","nie.util.freshNews","util.bjTime"];//nie组件
+    var nieFun =['ui.tab',"util.share","nie.util.share","ui.Switch","nie.util.freshNews","util.bjTime","util.swfobject"];//nie组件
     nie.use(nieFun, function () {
+        //下载专区Flash
+        if($.flash.available){
+            $('.secDownload').prepend('<div id="downFlash"></div>')
+                                     .find('.downFlag').addClass('hide');
+            $('#downFlash').empty().flash({
+                swf: 'http://res.nie.netease.com/xy2/gw/14v1/swf/download.swf',
+                wmode:"transparent",
+                allowscriptaccess:"always",
+                width: 300,
+                height:280
+            });
+        }
+
         //未读新闻
         var freshNews=nie.util.freshNews();
-        console.log(freshNews.data.length)
+        console.log(freshNews.data.length);
+        var num = [],tab1 = $('#fTabNav1').find('li'),tab2 = $('#fTabNav2').find('li');//最新、新闻、公告、活动、专题、推荐、回顾、玩家、热帖、你提我改
+        for(var j = 0;j<freshNews.data.length;j++){
+            switch (freshNews.data[i].channel){
+                case  ('新闻' | '公告' | '活动' | '专题'): num[0]++;break
+                case '新闻': num[1]++;break;
+                case '公告': num[2]++;break;
+                case '活动': num[3]++;break;
+                case '专题': num[4]++;break;
+                case ('图片' | '畅谈大话' | '大话画报' | '大剧透' | '牛人逸事' | '鸡驴大婶' | '热门话题' | '有内涵' | '牛图总汇' | '投票' | '??有神' | '推荐头图'): num[5]++;break;
+                case '回顾': num[6]++;break;
+                case '玩家':num[7]++;break;
+                case '热帖': num[8]++;break;
+                case '你提我改': num[9]++;break;
+                default :break;
+            }
+        }
+        for(var k = 0;k<num.length;k++){
+            if(num[k]){
+                if(k<=4){
+                    tab1.eq(k).append('<em class="sprite">'+num[k]+'</em>')
+                }else{
+                    tab2.eq(k).append('<em class="sprite">'+num[k]+'</em>')
+                }
+            }
+        }
         //图库
         $.Switch( {btnDoms:[$('.picSwitchBtn')],imgDoms:[$(".picList")],conDoms:[$('.tukuM li span')]});
         //分享
