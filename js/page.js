@@ -370,7 +370,7 @@ var gwFuns = {
                 $('#teamPart')
                     .css('overflow','hidden')
                     .fadeIn()
-                    .animate({'width':'702px'},100,function(){
+                    .animate({'width':'800px'},100,function(){
                         $(this).css('overflow','visible');
                     })
 
