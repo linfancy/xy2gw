@@ -11,6 +11,12 @@ fabu.html为配套在发布系统的版本，可以作为学习模板。
 *压缩文件：<a href="http://tool.css-js.com/" target="_blank">http://tool.css-js.com/</a>
 
 
+相关备忘：
+---------
+>1.技术联系人：Mr.F    编辑联系人：追逐、老头     设计师：kk
+
+>2.相关配置链接：<a href="http://note.youdao.com/share/?id=9cb34a908135877f5435d25d60db0d28&type=note" target="_blank">笔记链接</a>
+
 改版记录：
 ---------
 ###1.接到设计稿并开始相关规划 - 2014.3.15
