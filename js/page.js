@@ -35,6 +35,7 @@ $(function(){
 //                height:280
 //            });
 //        }
+
         //Õºø‚
         $.Switch( {btnDoms:[$('.picSwitchBtn')],imgDoms:[$(".picList")],conDoms:[$('.tukuM li span')]});
         //∑÷œÌ
