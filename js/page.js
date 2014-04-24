@@ -439,8 +439,8 @@ $.fn.initLunbo = function (options) {
     function initPosition() {
         var web_width = $(window).width();
         lb_nav_btn.width(240 * lb_nav_btns.length);
-        if (web_width <= 1104) {
-            lunbo.css("width", "1104px");
+        if (web_width <= 1192) {
+            lunbo.css("width", "1192px");
         }
         else {
             lunbo.css("width", "100%");
@@ -453,8 +453,6 @@ $.fn.initLunbo = function (options) {
             x = i;
             navAnimate();
             itemAnimate();
-        }, function () {
-
         });
     });
 
