@@ -61,7 +61,7 @@ article{*height:2252px}
 .block1{height: 655px;padding-top: 31px;}
 .block1 .dLeft{overflow: visible}
 .block2{height: 428px;padding-top: 22px}
-.block2 .fltL{overflow: hidden;*zoom:1;position: relative;}
+.block2 .fltL,.block3 .dMid,.block3 .dRight{overflow: hidden;*zoom:1;position: relative;}
 .block3{height: 1035px;padding-top: 40px}
 .sprite,#bannerShowItem li a.current,.secEntry2 li a:hover{background-image: url(../img/sprite.png);_background-image:url(../img/sprite8.png);background-repeat: no-repeat}
 section{position: relative;zoom: 1}
