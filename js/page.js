@@ -24,17 +24,17 @@ $(function(){
     var nieFun =['ui.tab',"util.share","nie.util.share","ui.Switch","nie.util.freshNews","util.bjTime","util.swfobject"];//nie组件
     nie.use(nieFun, function () {
         //下载专区Flash
-        if($.flash.available){
-            $('.secDownload').prepend('<div id="downFlash"></div>')
-                                     .find('.downFlag').addClass('hide');
-            $('#downFlash').empty().flash({
-                swf: 'http://res.nie.netease.com/xy2/gw/14v1/swf/download.swf',
-                wmode:"transparent",
-                allowscriptaccess:"always",
-                width: 300,
-                height:280
-            });
-        }
+//        if($.flash.available){
+//            $('.secDownload').prepend('<div id="downFlash"></div>')
+//                                     .find('.downFlag').addClass('hide');
+//            $('#downFlash').empty().flash({
+//                swf: 'http://res.nie.netease.com/xy2/gw/14v1/swf/download.swf',
+//                wmode:"transparent",
+//                allowscriptaccess:"always",
+//                width: 300,
+//                height:280
+//            });
+//        }
         //图库
         $.Switch( {btnDoms:[$('.picSwitchBtn')],imgDoms:[$(".picList")],conDoms:[$('.tukuM li span')]});
         //分享
@@ -89,7 +89,7 @@ $(function(){
     var w=$(window);
     if($.browser.msie && $.browser.version == '6.0') {
         $(window).scroll(function(){
-            var elm=$('#pcWrap'),h=elm.outerHeight(),scTop=w.scrollTop(),wH=w.height();
+            var elm=$('#hotShow'),h=elm.outerHeight(),scTop=w.scrollTop(),wH=w.height();
             if(h>=wH) return;
             em.css({position:'absolute'})
             elm.stop().animate({"top":scTop+(wH-h - 20)},time||400);

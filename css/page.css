@@ -54,16 +54,17 @@ aside{height: 112px;background: url(../img/bg3.jpg) no-repeat center bottom;padd
 footer{height: 380px}
 article{*height:2252px}
 .main{width: 1160px;margin: 0 auto;position: relative;zoom: 1;padding: 0 20px}
-.dLeft,.dMid,.dRight{float: left;position: relative;*zoom: 1}
+.dLeft,.dMid,.dRight{float: left;position: relative;*zoom: 1;overflow: hidden}
 .dLeft{width: 240px;margin-right: 30px}
 .dMid{width: 460px;margin-right: 30px}
 .dRight{width: 400px}
 .block1{height: 655px;padding-top: 31px;}
 .block2{height: 428px;padding-top: 22px}
+.block2 .fltL{overflow: hidden;*zoom:1;position: relative;}
 .block3{height: 1035px;padding-top: 40px}
 .sprite,#bannerShowItem li a.current,.secEntry2 li a:hover{background-image: url(../img/sprite.png);_background-image:url(../img/sprite8.png);background-repeat: no-repeat}
 section{position: relative;zoom: 1}
-.hot{display: block;width: 11px;height: 11px;background-position: -403px 0}
+.hot{display: block;width: 11px;height: 11px;background-position: -403px 0;overflow: hidden}
 .secTitle{width: 145px}
 .secTitle em{width: 46px;height: 56px;background-position: -366px -996px;display: block;float: left}
 .secTitle .titleName{display: block;width: 98px;float: right;height: 24px;margin-top: 18px;}
@@ -145,7 +146,7 @@ footSell 卖点
 .secDownload .btn2,.downFlag .btn3{width: 50%;height:45px;position: absolute;bottom: 0;}
 .secDownload .btn2{left: 0}
 .secDownload .btn3{right: 0}
-.secChange{margin:15px 0 10px}
+.secChange{margin:15px 0 10px;position: relative;z-index: 1000}
 .secBanner .btn{margin-bottom: 10px}
 .btn4,.btn5,.btn6{height: 60px}
 .btn7{height: 95px}
@@ -169,7 +170,7 @@ footSell 卖点
 .bannerIntro{top: 56px}
 .secSwitch ol{width: 95px;height: 9px;padding:7px 0;background-position: -247px -286px;position: absolute;left:50%;margin-left: -47px;top: 110px;z-index: 40;text-align:justify;}
 .secSwitch ol li{float:left;}
-.secSwitch ol li i{display: block;width: 9px;height: 9px;background: #9b9b9b;margin: 0 auto;-webkit-border-radius: 50%; -moz-border-radius: 50%;border-radius: 50%;}
+.secSwitch ol li i{display: block;width: 9px;height: 9px;background: #9b9b9b;margin: 0 auto;-webkit-border-radius: 50%; -moz-border-radius: 50%;border-radius: 50%;overflow: hidden}
 .secSwitch ol li.current i{background: #c93231}
 #slideBtn3{display: none}
 #slideBtn3 a{display: block;width: 35px;height: 35px;top: 104px;position: absolute;z-index: 20;vertical-align: middle}
@@ -234,6 +235,7 @@ footSell 卖点
 .secHot h3{font-weight: bold;font-size: 14px;padding-left: 18px;}
 .secHot a{padding-right: 10px;font-size: 14px}
 .secHot a:hover{color: #c93231}
+.secHot p{margin-right: -30px}
 
 .secEntry{height: 191px;width: 401px;position: relative;*zoom:1;overflow: hidden}
 .entryInner{margin-right: -5px;}
@@ -284,7 +286,7 @@ footSell 卖点
 #slideWrap2 .calIntro a:hover{text-decoration: underline}
 
 /*新服*/
-.serverName a,.serverTime p,#server strong{display:block;float: left;width: 64px;height: 23px;line-height: 23px;margin-right: 30px;text-align: center}
+.serverName a,.serverTime p,#server strong{display:block;float: left;width: 64px;height: 23px;line-height: 23px;margin-right: 30px;text-align: center;_margin-right:15px}
 #server strong{color: #bbb;height: 23px;width: 55px;margin-right: 8px}
 .serverName{margin-bottom: 10px}
 .serverName a{color: #c93231}
@@ -293,7 +295,7 @@ footSell 卖点
 =====================================*/
 .block2 .dLeft .ftxtList li{background: url(../img/li.gif) no-repeat left 7px;padding-left: 8px}
 .block2 .dLeft .ListMore{top: 22px}
-.PicTitle .titleName{background-position: -109px -285px}
+.editorTitle .titleName{background-position: -109px -285px}
 .picWrap{background:#fff;margin-top:10px;-moz-box-shadow:0px 0px 10px rgba(0,0,0,0.2); -webkit-box-shadow:0px 0px 10px rgba(0,0,0,0.2); box-shadow:0px 0px 10px rgba(0,0,0,0.2);}
 .picWrap .fListWrap{padding: 0 15px 11px}
 .txtImg{width: 210px;height: 115px;position: relative;*zoom:1;margin-bottom: 18px}
@@ -305,9 +307,10 @@ footSell 卖点
 .block2 .bgBlack p{color: #232323}
 
 .tukuTitle .titleName{background-position: -5px -130px;}
-.picTitle {height: 33px;margin-top: 14px;}
+.picTitle {height: 33px;margin-top: 14px;width: 743px}
 .tukuL{width: 92px;height: 33px;background-position: -320px -980px}
 .tukuM{height: 33px;line-height: 33px;position: relative;*zoom:1;margin-left: 18px}
+.tukuM{width:585px}
 .tukuM li{float: left;position: relative;*zoom:1}
 .tukuM li span,.tukuM li span em{display: none;width: 13px;height: 17px;position: absolute;}
 .tukuM li span{background-position: -220px -1px;left: 8px;top: 7px;-webkit-animation:bounceInDown 1s .2s ease both;-moz-animation:bounceInDown 1s .2s ease both;}
@@ -339,10 +342,10 @@ footSell 卖点
 .picBtn6{color: #fff;font-size: 16px;display: block;width: 116px;height: 33px;line-height: 32px;background: #c93231;text-align: center;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    border-radius: 3px;margin-left: 24px}
+    border-radius: 3px;margin-left: 24px;_margin-left:0}
 .picBtn6:hover{text-decoration: none;background: #dd4b4a}
-.picTabCont{position: relative;*zoom:1;width:888px;height: 232px;top: 10px;}
-.picList{margin:0 -10px -3px 0;position: absolute;top: 0;left: 0;opacity: 0;filter:alpha(opacity=0)}
+.picTabCont{width:890px;height:300px;top: 10px;position: relative;*zoom:1;}
+.picList{width:900px;height:300px;margin:0 -10px -3px 0;position: absolute;top: 0;left: 0;opacity: 0;filter:alpha(opacity=0);_margin-right:-50px;overflow: hidden}
 .picList li{float: left;position: relative;width: 175px;height: 146px;*zoom:1;overflow: hidden;margin:0 4px 4px 0;-moz-box-shadow:0px 0px 10px rgba(0,0,0,0.2); -webkit-box-shadow:0px 0px 10px rgba(0,0,0,0.2); box-shadow:0px 0px 10px rgba(0,0,0,0.2);}
 .picList li a,.picList li img{display: block;width: 175px;height: 115px;overflow: hidden;}
 .picList li a:hover img{-webkit-transform:scale(1.1,1.1);-ms-transform:scale(1.1,1.1);}
@@ -429,7 +432,6 @@ footSell 卖点
 .secVideo2{margin-top: 27px}
 .secVideo2 .titleName{background-position: -2px -207px}
 .secVideo2 .fListVideo{margin-top: 4px}
-.secVideo2 .fListVideo li{margin-bottom: 1px;*margin-bottom: -5px}
 .secVideo2 .fListVideo a.fltL{display: block;width: 210px;height: 115px;position: relative;*zoom:1;margin-bottom: -1px}
 .secVideo2 .fListVideo a em{display: block;width: 54px;height: 54px;background-position: -370px -857px;position: absolute;top: 40px;left: 90px;}
 .secVideo2 .fListVideo .vIntro{width:190px;height: 113px;border:  1px solid #dddedd;border-right: 0;border-left:0;position: relative;*zoom:1;margin-bottom: -1px}
@@ -453,7 +455,7 @@ aside .fltR{width: 20px;height: 36px;background-position: -20px 0}
 .mod-share .obj-sharetxt{padding-right:5px}
 .mod-share #share a{padding:0 18px 0 2px;color:#4e4e4e}
 .mod-share #share a:hover{text-decoration:underline}
-#hotShow{display: block;width: 124px;height: 83px;background-position: -290px -416px;position: fixed;right: 0;bottom:0}
+#hotShow{display: block;width: 124px;height: 83px;background-position: -290px -416px;position: fixed;right: 0;bottom:0;_position:absolute}
 
 footer{text-align:center;clear:both;line-height:60px;position: relative;margin:0 auto;overflow: visible}
 .fotSell{width:1142px;margin:0 auto;padding: 64px 0;border-bottom: 1px solid #bfbfbf}
