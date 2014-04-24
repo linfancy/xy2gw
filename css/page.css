@@ -239,11 +239,11 @@ footSell 卖点
 .entryInner{margin-right: -5px;}
 .secEntry .entryBtn{display: block;width: 79px;height: 94px;border: 1px solid #e4e4e4;background:#fff;float: left;text-align: center;margin:0 -1px -1px 0;position: relative;z-index: 10}
 .secEntry .current{border-bottom: 0;height:96px}
-.secEntry .entryBtn i{display: inline-block;font-size:30px;margin:27px 0 -2px 0;color: #bbb;line-height: 32px}
+.secEntry .entryBtn i{display: inline-block;font-size:30px;margin:18px 0 2px 0;color: #bbb;line-height: 32px}
 .secEntry .entryBtn:hover{text-decoration: none}
 .secEntry .entryBtn:hover i{-webkit-animation: toTopFromBottom .3s forwards;-moz-animation: toTopFromBottom .3s forwards;}
 .secEntry .entryBtn p{color: #000;font-size: 14px}
-.secEntry .entryArrow{width: 5px;display: block;margin: 4px auto;}
+.secEntry .entryArrow{width: 5px;display: block;margin: 8px auto;}
 .secEntry .entryArrow span,.secEntry .entryArrow em{position: static;display: block;width: 0;top: 0;left: 0;height: 0;border-color: rgba(255,255,255,0);border-color: transparent\0;_border-color: tomato;_filter: chroma(color=tomato);border-style: solid;overflow: hidden;border-width: 5px 5px 0;}
 .secEntry .current .entryArrow span,.secEntry .current .entryArrow em{position: static;display: block;width: 0;top: 0;left: 0;height: 0;border-color: rgba(255,255,255,0);border-color: transparent\0;_border-color: tomato;_filter: chroma(color=tomato);border-style: solid;overflow: hidden;border-width: 0 5px 5px;}
 .secEntry .entryArrow span{border-top-color: #fff;margin-top: -8px}
@@ -265,7 +265,7 @@ footSell 卖点
 .secEntry #closeWrap:hover{background-position: -380px -11px}
 .secEntry .entryWrapShow{top: 96px}
 .secEntry .entryItem{padding: 0 26px}
-.secEntry .entryItem a.btn{display: inline-block;padding: 0 2px;height: 18px;line-height: 18px;margin: 0 10px 15px 0}
+.secEntry .entryItem a.btn{display: inline-block;padding: 0 2px;height: 18px;line-height: 18px;margin: 0 10px 15px 0;font-family: simSun, sans-serif}
 .secEntry .entryItem a.btn:hover{background: #c93231;color: #fff;text-decoration: none}
 
 /*日历*/
