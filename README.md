@@ -200,5 +200,5 @@ fabu.html为配套在发布系统的版本，可以作为学习模板。
 
  >西行谷Iframe负责人：孙磊 leis@corp.netease.com  陈希成 hzchenxch@corp.netease.com
 
-###14.修复相关UI细节，兼容性测试 - 2014.4.24
+###14.修复相关UI细节，兼容性测试，并准备上线 - 2014.4.24
 
