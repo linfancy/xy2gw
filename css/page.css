@@ -61,7 +61,7 @@ article{*height:2252px}
 .block1{height: 655px;padding-top: 31px;}
 .block1 .dLeft{overflow: visible}
 .block2{height: 428px;padding-top: 22px}
-.block2 .fltL,.block3 .dMid,.block3 .dRight{overflow: hidden;*zoom:1;position: relative;}
+.block2 .fltL,.block3 .dMid,.block3 .dRight{overflow: visible;*zoom:1;position: relative;}
 .block3{height: 1035px;padding-top: 40px}
 .sprite,#bannerShowItem li a.current,.secEntry2 li a:hover{background-image: url(../img/sprite.png);_background-image:url(../img/sprite8.png);background-repeat: no-repeat}
 section{position: relative;zoom: 1}
@@ -102,7 +102,7 @@ section{position: relative;zoom: 1}
 #bannerShowImg{height:100%;overflow: hidden;*zoom:1;position: relative;z-index: 4}
 .lunboImgItem{width: 100%;height: 100%;display: none}
 .lunboImgItem a{display: block;width: 100%;height: 100%;}
-.bannerShowBg{width: 100%;height: 72px;position:absolute;bottom:0;left:0;background: url(../img/lunboNav.png) no-repeat center bottom;z-index: 5}
+.bannerShowBg{width: 100%;height: 72px;position:absolute;bottom:0;left:0;background: url(../img/lunboNav.jpg) no-repeat center bottom;z-index: 5}
 #bannerShowItem{width:960px;height:72px;overflow: hidden;*zoom:1;float: left;position:relative}
 #bannerShowItem ul{width: 2000px;position: relative;*zoom:1}
 #bannerShowItem li{float: left}
@@ -202,6 +202,7 @@ footSell Âôµã
 .fTabNav li {float:left;width:78px;height:42px;position: relative}
 .fTabNav li em{display: block;width: 15px;height: 15px;background-position: -277px -1035px;position: absolute;top: 6px;right: 6px;color: #fff;text-align: center;line-height: 15px}
 .fTabNav li a {display:block;height:42px;background:#e4e4e4;color:#474747;text-align:center;font-size:14px;line-height:42px;}
+.fTabNav li a:hover{text-decoration: none}
 .fTabNav li.current a {background:#fff;}
 .secGuide .ftxtList{padding-top: 20px}
 .fTabCont .ftxtList{display: none;}
