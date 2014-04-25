@@ -98,6 +98,13 @@ $(function(){
     }
     //ËÑË÷
     document.getElementById('searchResult').onclick=function(){gwFuns.search();}
+    $("#searchKeyWords1").keydown(function(e){
+        var curKey = e.which;
+        if(curKey == 13){
+            gwFuns.search();
+            return false;
+        }
+    });
     //ÖÜÄ©»î¶¯
     $('.entryBlock h3').click(function(){
         $('.entryBlockWrap').fadeIn();
@@ -132,7 +139,7 @@ var gwFuns = {
                         html +='<a href="$link" target="_blank"><img src="$src" alt="title" width="229" height="123"/><p class="bannerTitle">title</p><p class="bannerIntro">$intro</p></a>'
                             .replace('$src',listData.eq(itemFlag).data('images'))
                             .replace(/title/g,listData.eq(itemFlag).data('title'))
-                            .replace('$link',listData.eq(itemFlag).data('href'))
+                            .replace('$link',listData.eq(itemFlag).data('href')+'?banner='+listData.eq(itemFlag).data('title'))
                             .replace('$intro',listData.eq(itemFlag).data('intro'));
                     }
                 }
