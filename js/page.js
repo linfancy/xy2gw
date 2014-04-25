@@ -338,6 +338,7 @@ var gwFuns = {
         var oneday = 86400000
         var nowdate = new Date(o.dateObj)
         var nownum
+        var wrap = $('#slideWrap2');
         switch(o.day){
             case 0 :cnday = '日';break;
             case 1 :cnday = '一';break;
@@ -360,7 +361,13 @@ var gwFuns = {
             var html = "<strong>时间：</strong>"
             html +=weekday.getMonth()+1+"月"+weekday.getDate()+"日"+"　周"+week[i]
             $(this).html(html);
-        })
+        });
+        wrap.find('ul').animate({left:-wrap.find('li').width()*nownum});
+        gwFuns.scrollPics({//日历切换
+            currentTarget:'#slideShow2',
+            wrap: '#slideWrap2',
+            autoplay : false
+        });
     },
     teamShow:function(){
         $('#btnEditor').click(function(){
@@ -395,11 +402,6 @@ var gwFuns = {
         gwFuns.scrollPics({//图片切换
             currentTarget:'#slideShow',
             wrap: '#slideWrap'
-        });
-        gwFuns.scrollPics({//日历切换
-            currentTarget:'#slideShow2',
-            wrap: '#slideWrap2',
-            autoplay : false
         });
         gwFuns.teamShow()//团队介绍
 
