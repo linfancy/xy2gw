@@ -71,7 +71,7 @@ section{position: relative;zoom: 1}
 .secTitle .titleName{display: block;width: 98px;float: right;height: 24px;margin-top: 18px;}
 .current{display: block!important;}
 .bgBlack{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#66000000', endColorstr='#66000000');background:rgba(0,0,0,0.4);}
-.red{color:#c93231}
+.red{color:#c93231!important}
 /*=====================================
 ¶¥²¿µ¼º½
 =====================================*/
